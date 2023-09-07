@@ -25,7 +25,7 @@ section>div{
 }
 
 section > div:nth-child(1){
-    background: url("../img/1.jpg");
+    background: url("download (1).jpeg");
     background-color: darkmagenta;
     background-size: cover;
     background-position: center;
@@ -34,14 +34,14 @@ section > div:nth-child(1){
 }
 
 section > div:nth-child(2){
-    background: url("../img/2.webp");
+    background: url("download (2).jpeg");
     background-size: cover;
     background-color: darkred;
     background-position: center;
 }
 
 section > div:nth-child(3) {
-    background: url("../img/4.jpg");
+    background: url("download (3).jpeg");
     background-size: cover;
     background-color: fuchsia;
     background-position: center;
@@ -50,35 +50,35 @@ section > div:nth-child(3) {
 }
 
 section > div:nth-child(4){
-    background: url("../img/3.jpg");
+    background: url("download.jpeg");
     background-size: cover;
     background-color: coral;
     background-position: center;
 }
 
 section > div:nth-child(5){
-    background: url("../img/6.jpg");
+    background: url("images (1).jpeg");
     background-size: cover;
     background-color: darksalmon;
     background-position: center;
 }
 
 section > div:nth-child(6){
-    background: url("../img/7.jpg");
+    background: url("images (2).jpeg");
     background-size: cover;
     background-color: blueviolet;
     background-position: center;
 }
 
 section > div:nth-child(7){
-    background: url("../img/8.webp");
+    background: url("images (5).jpeg");
     background-size: cover;
     background-color: blue;
     background-position: center;
 }
 
 section > div:nth-child(8){
-    background: url("../img/5.jpg");
+    background: url("images (7).jpeg");
     background-size: cover;
     background-position: center;
     grid-column: 2/4;

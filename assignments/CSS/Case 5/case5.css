@@ -22,84 +22,84 @@ section>div{
 }
 
 section > div:nth-child(1){
-    background-image: url("My Portfolio/assignments/CSS/Case 5/download1.jpeg");
+    background-image: url("download1.jpeg");
     background-color: aqua;
     background-size: cover;
     background-position: center;
 }
 
 section > div:nth-child(2){
-    background: url("My Portfolio/assignments/CSS/Case 5/download.jpeg");
+    background: url("download.jpeg");
     background-color: burlywood;
     background-size: cover;
     background-position: center;
 }
 
 section > div:nth-child(3) {
-    background: url("../img/03.jpg");
+    background: url("download (2).jpeg");
     background-color: brown;
     background-size: cover;
     background-position: center;
 }
 
 section > div:nth-child(4){
-    background: url("../img/04.jpg");
+    background: url("download (3).jpeg");
     background-color: chocolate;
     background-size: cover;
     background-position: center;
 }
 
 section > div:nth-child(5){
-    background: url("../img/05.jpg");
+    background: url("images (1).jpeg");
     background-color: chartreuse;
     background-size: cover;
     background-position: center;
 }
 
 section > div:nth-child(6){
-    background: url("../img/06.jpg");
+    background: url("images (2).jpeg");
     background-color: deeppink;
     background-size: cover;
     background-position: center;
 }
 
 section > div:nth-child(7){
-    background: url("../img/07.jpg");
+    background: url("images (3).jpeg");
     background-color: darkcyan;
     background-size: cover;
     background-position: center;
 }
 
 section > div:nth-child(8){
-    background: url("../img/08.jpg");
+    background: url("images (4).jpeg");
     background-size: cover;
     background-color: forestgreen;
     background-position: center;
 }
 
 section > div:nth-child(9){
-    background: url("../img/09.jpg");
+    background: url("images (5).jpeg");
     background-color: darkgoldenrod;
     background-size: cover;
     background-position: center;
 }
 
 section > div:nth-child(10){
-    background: url("../img/10.jpg");
+    background: url("images (6).jpeg");
     background-size: cover;
     background-color: darkred;
     background-position: center;
 }
 
 section > div:nth-child(11){
-    background: url("../img/11.jpg");
+    background: url("images (7).jpeg");
     background-size: cover;
     background-color: darkorchid;
     background-position: center;
 }
 
 section > div:nth-child(12){
-    background: url("../img/12.jpg");
+    background: url("images.jpeg");
     background-size: cover;
     background-color: dimgrey;
     background-position: center;
