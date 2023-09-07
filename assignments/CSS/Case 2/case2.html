@@ -6,6 +6,103 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="case2.css">
     <title>Document</title>
+    <style>
+        body>header{
+    top: 0;
+    height: 5vh;
+    width: 100%;
+    border-bottom: 1px solid black;
+    box-shadow: 5px 1px 5px 0px black;
+    position: relative;
+}
+body>header>img{
+    width: 10vw;
+    height: 4vh;
+    position: absolute;
+    left: 0;
+}
+body>header>nav{
+    position: absolute;
+    display: inline-block;
+    top: 0vh;
+    right: 0;
+    height: 10vh;
+}
+
+body>header>nav>ul > li {
+    padding-right: 2vw;
+    display: inline-block;
+}
+
+body>header ul > li > a {
+    color: rgba(0, 0, 0, 0.96);
+    text-decoration: none;
+    font-size: 1vw;
+
+}
+body>main{
+    position: relative;
+}
+body main nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: blueviolet;
+    width: 20vw;
+    list-style: none;
+    font-size: 20px;
+}
+body main nav ul li{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    padding-top: 5vw;
+    margin-left: 1%;
+}
+body main nav ul li a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    margin-left: 0.5vw;
+}
+main > section {
+    margin-left: 200px;
+    padding: 10px;
+}
+main > section > section:first-child {
+    top: 0;
+    bottom: 0;
+    margin-left: 25%;
+    position: relative;
+}
+
+main > section > section:first-child>div{
+    border: 1px solid rgba(0, 0, 0, 0.33);
+    position:absolute;
+    width: calc(100%/3); 
+}
+
+main > section > section:first-child> img {
+    width: 70%;
+}
+ 
+main>section>section:nth-child(2){
+    margin-left: 10%;
+    font-size: 15px;
+}
+footer{
+    position: relative;
+    text-align: center;
+    background-color: grey;
+    padding: 1px;
+    height: 55px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+    </style>
 </head>
 <body>
     <header>
