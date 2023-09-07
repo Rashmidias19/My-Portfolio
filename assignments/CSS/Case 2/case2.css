@@ -17,14 +17,12 @@ body>header>nav{
     display: inline-block;
     top: 0vh;
     right: 0;
-    /* width: 30vw; */
     height: 10vh;
 }
 
 body>header>nav>ul > li {
     padding-right: 2vw;
     display: inline-block;
-    /* font-size: 8vh; */
 }
 
 body>header ul > li > a {
@@ -63,8 +61,6 @@ main > section {
     margin-left: 200px;
     padding: 10px;
 }
-
-/*   Body - Gif   */
 main > section > section:first-child {
     top: 0;
     bottom: 0;
