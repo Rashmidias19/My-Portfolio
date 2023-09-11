@@ -1,0 +1,61 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    /* background-image: url("assests/photo_2023-06-27_21-35-40.jpg"); */
+}
+section:nth-child(1){
+    /* position: relative; */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("assests/photo_2023-06-27_21-35-40.jpg");
+}
+section>header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url("assests/photo_2023-06-27_21-35-40.jpg");
+}
+section>header>nav{
+    position: absolute;
+    height: 10vh;
+    top: 8px;
+    right: 24px;
+    z-index: 3;
+    position: fixed;
+    
+}
+section>header>nav>ul>a>li{
+    display: inline-block;
+    font-weight: bolder;
+    position: relative;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    /* justify-content: center;
+    text-align: center; */
+}
+header>nav>ul>a>li{
+    text-decoration: none;
+   color: rgb(255, 255, 255);
+}
+.title1{
+    width: auto;
+    color: #ffffff;
+    font-size: 5vw;
+    position:absolute;
+    top: 10px;
+    left: 2%;
+    font-family: Ruthie;
+    font-weight: normal;
+}
+.title2{
+    color: #8b044c;;
+}
