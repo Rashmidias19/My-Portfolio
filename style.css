@@ -6,15 +6,16 @@
 body{
     position: relative;
     /* background-image: url("assests/photo_2023-06-27_21-35-40.jpg"); */
+    background-color: #11050b;
 }
-section:nth-child(1){
+body>section:nth-child(1){
     /* position: relative; */
     top: 0;
     width: 100%;
     /* height: 100%; */
     background-image: url("assests/photo_2023-06-27_21-35-40.jpg");
 }
-section>header{
+header{
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -23,7 +24,7 @@ section>header{
     /* background-position: center; */
     background-image: url("assests/photo_2023-06-27_21-35-40.jpg");
 }
-section>header>nav{
+header>nav{
     position: absolute;
     height: 10vh;
     top: 8px;
@@ -32,7 +33,7 @@ section>header>nav{
     position: fixed;
     
 }
-section>header>nav>ul>a>li{
+header>nav>ul>a>li{
     display: inline-block;
     font-weight: bolder;
     position: relative;
@@ -111,7 +112,7 @@ header>nav>ul>a>li{
 .btn1{
     position: absolute;
     color: #ffffff;
-    background-color:#550330;
+    background-color:#220012;
     width: 7vw;
     height: 3vh;
     font-size: 2.1vh;
@@ -136,4 +137,35 @@ header>nav>ul>a>li{
                 0 0 50px #3b0028,
                 0 0 200px #3b0028;
      -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(102, 11, 54, 0.356));
+}
+body>header>div{
+    position: absolute;
+    width: 30vw;
+    display: flex;
+    font-size: 3.5vw;
+    justify-content: space-evenly;
+    bottom: 0;
+    left: 6.5%;
+}
+main{
+    position: absolute;
+    display: inline;
+    top: 100vh;
+    min-height: 100vh;
+    
+}
+main>section:nth-child(1){
+    position:absolute;
+    background-color: #0f0209;
+}
+main>section:nth-child(1)>div:nth-child(1){
+  
+}
+.img3{
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    width: 30vw;
+    height: 85vh;
+    border-radius: 4vw;
 }
