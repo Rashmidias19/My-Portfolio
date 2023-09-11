@@ -111,17 +111,29 @@ header>nav>ul>a>li{
 .btn1{
     position: absolute;
     color: #ffffff;
-    background-color:#5f0334;
-    width: 10vw;
-    height: 5vh;
-    font-size: 2.7vh;
+    background-color:#550330;
+    width: 7vw;
+    height: 3vh;
+    font-size: 2.1vh;
+    padding: 10px 20px;
     top: 64%;
     overflow: hidden;
     margin: 8px 0;
     left: 8%;
     text-align: center;
     border-radius: 40px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: none;
+
+
+}
+.btn1:hover{
+    background: #3b0028;
+    color: #ffffff;
+    box-shadow: 0 0 5px #3b0028,
+                0 0 25px #3b0028,
+                0 0 50px #3b0028,
+                0 0 200px #3b0028;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(102, 11, 54, 0.356));
 }
