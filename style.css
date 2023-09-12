@@ -79,27 +79,25 @@ main>section:nth-child(1){
     height: 95vh;
     width: 100%;
 }
-#home>div:nth-child(1){
-    background-image: url("assests/black back.png");
+#home>img:nth-child(1){
     position: absolute;
     background-repeat: no-repeat;
     background-position:center center;
-    right: 10%;
-    top: 18vh;
+    right: 5vw;
+    top: 10vh;
     opacity: 55%;
     width: 35vw;
     height: 90vh;
     background-size: cover;
     overflow: hidden;
 }
-#home>div:nth-child(2){
-    background-image: url("assests/d286cd84-4dce-4028-8310-4c7ff8998781.png");
+#home>img:nth-child(2){
     position: absolute;
     background-repeat: no-repeat;
     background-position: center center;
     right: 5%;
-    top: 3.5%;
-    width: 46vw;
+    top: 0;
+    width: 40vw;
     height: 99.8vh;
     background-size: cover;
     overflow: hidden;
@@ -157,6 +155,31 @@ main>section:nth-child(1){
                 0 0 50px #3b0028,
                 0 0 200px #3b0028;
      -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(102, 11, 54, 0.356));
+}
+.iconlist{
+    position: absolute;
+    width: 30vw;
+    display: flex;
+    font-size: 3.5vw;
+    justify-content: space-evenly;
+    bottom: 0;
+    top: 85vh;
+    left: 6.5%;
+}
+main>section:nth-child(3){
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 100vh;
+    background-color:#3b0028;
+}
+#aboutMe>img{
+    position: relative;
+    border-radius: 5vw;
+    height: 90vh;
+    width: 30vw;
+    left: 4vw;
+    top: 5vh;
 }
 /* .img1{
     position: absolute;
