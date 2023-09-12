@@ -181,6 +181,31 @@ main>section:nth-child(3){
     left: 4vw;
     top: 5vh;
 }
+#aboutMe>hr{
+    position: absolute;
+    color: #acacacab;
+    height: 88vh;
+    left: 40vw;
+    top: 7vh;
+}
+.abt{
+    position: absolute;
+    color:#8b044c;
+    top: 10vh;
+    left: 42vw;
+    font-size: 2.9vw;
+    letter-spacing: 0.2vw;
+    font-family: Roboto Flex;
+    font-weight: bolder;
+}
+main>section:nth-child(3)>p{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2vw;
+    font-weight:500;
+    left: 42vw;
+    top: 20vh;
+}
 /* .img1{
     position: absolute;
     background-repeat: no-repeat;
