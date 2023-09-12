@@ -47,6 +47,20 @@ header>nav>ul>a>li{
     text-decoration: none;
    color: rgb(255, 255, 255);
 }
+header>nav>ul>a>li::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #c3cecdc4;
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+    bottom: -6px;
+}
+header>nav>ul>a>li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
 .title1{
     width: auto;
     color: #ffffff;
@@ -194,7 +208,7 @@ main>section:nth-child(1)>hr{
     top: 10vh;
     left: 42vw;
     font-size: 2.9vw;
-    letter-spacing: 4px;
+    letter-spacing: 0.2vw;
     /* display:ruby; */
     font-family: Roboto Flex;
     font-weight: bolder;
