@@ -206,6 +206,34 @@ main>section:nth-child(3)>p{
     left: 42vw;
     top: 20vh;
 }
+main>section:nth-child(3)>ul{
+    position: absolute;
+    top: 50vh;
+    left: 39.5vw;
+}
+main>section:nth-child(3)>ul>li{
+    list-style: none;
+    /* margin: 2vh 0; */
+    position: relative;
+    color: #ffffff;
+    font-size: 4vh;
+    font-weight:500;
+}
+main>section:nth-child(3)>ul>li>span{
+    color: #8b044c;
+    font-weight: bolder;
+}
+main>section:nth-child(4){
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 100vh;
+    background-color:#330825;
+}
+main>section:nth-child(3)>h1{
+    color: #ffffff;
+    
+}
 /* .img1{
     position: absolute;
     background-repeat: no-repeat;
