@@ -221,3 +221,32 @@ main>section:nth-child(1)>div:nth-child(2)>p{
     left: 42vw;
     top: 15vh;
 }
+main>section:nth-child(1)>ul{
+    position: relative;
+    top: 20vh;
+    left: 40vw;
+}
+main>section:nth-child(1)>ul>li{
+    list-style: none;
+    margin: 2vh 0;
+    position: relative;
+    color: #ffffff;
+    font-size: 2vw;
+    font-weight:500;
+}
+main>section:nth-child(1)>ul>li>span{
+    color: #8b044c;
+    font-weight: bolder;
+}
+main>section:nth-child(2){
+    /* position:absolute; */
+    background-color: #0f0209;
+}
+main>section:nth-child(2)>div>h1{
+    position: relative;
+    color: #ffffff;
+    top: 38vh;
+    left: 5vw;
+    font-size: 3vw;
+
+}
