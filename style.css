@@ -303,27 +303,28 @@ main>section:nth-child(3)>h1{
     top: 15vh;
     display: flex;
     position: absolute;
-    justify-content: space-evenly;
+    justify-content: space-between;
     left: 5vw;
 }
 .services-list>div{
-    width: 30vw;
+    width: 25vw;
     height: 50vh;
     background-color: #333333;
-    margin: 0.5vw;
+    margin: 2vw;
     position: relative;
     border-radius: 2vw;
+    transition: 0.5s, transform 0.5s;
 }
 .services-list>div>i{
     position: absolute;
-    top: 5vh;
+    top: 10%;
     left: 8%;
-    font-size: 7.8vh;
+    font-size: 7vh;
 }
 .services-list>div>h2{
     position: absolute;
     font-size: 5vh;
-    top: 9vh;
+    top: 20%;
     left: 8%;
     color: rgb(233, 227, 227);
 }
@@ -332,10 +333,21 @@ main>section:nth-child(3)>h1{
     color: rgb(172, 161, 161);
     font-size: 3vh;
     font-weight: 550;
-    top: 25vh;
+    top: 50%;
     left: 8%;
 }
-.services-list
+.services-list>div>a{
+    color: #c7bfbf;
+    text-decoration: none;
+    font-size: 3vh;
+    top: 80%;
+    left: 8%;
+    position: absolute;
+}
+.services-list div:hover{
+    background: #29021d;
+    transform: translateY(-10px);
+}
 /* .contents{
     padding: 0 3vh;
     border-left: 0.2vw solid #b993a2;
