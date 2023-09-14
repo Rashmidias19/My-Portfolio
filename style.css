@@ -309,16 +309,33 @@ main>section:nth-child(3)>h1{
 .services-list>div{
     width: 30vw;
     height: 50vh;
-    background-color: #272727;
+    background-color: #333333;
     margin: 0.5vw;
     position: relative;
+    border-radius: 2vw;
 }
 .services-list>div>i{
     position: absolute;
     top: 5vh;
-    left: 2vw;
-    font-size: 7.5vh;
+    left: 8%;
+    font-size: 7.8vh;
 }
+.services-list>div>h2{
+    position: absolute;
+    font-size: 5vh;
+    top: 9vh;
+    left: 8%;
+    color: rgb(233, 227, 227);
+}
+.services-list>div>p{
+    position: absolute;
+    color: rgb(172, 161, 161);
+    font-size: 3vh;
+    font-weight: 550;
+    top: 25vh;
+    left: 8%;
+}
+.services-list
 /* .contents{
     padding: 0 3vh;
     border-left: 0.2vw solid #b993a2;
