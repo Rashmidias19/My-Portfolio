@@ -216,7 +216,7 @@ main>section:nth-child(3)>ul>li{
     /* margin: 2vh 0; */
     position: relative;
     color: #ffffff;
-    font-size: 3vh;
+    font-size: 2vw;
     font-weight:500;
 }
 main>section:nth-child(3)>ul>li>span{
@@ -323,7 +323,7 @@ main>section:nth-child(3)>h1{
 }
 .services-list>div>h2{
     position: absolute;
-    font-size: 5vh;
+    font-size: 3vw;
     top: 20%;
     left: 8%;
     color: rgb(233, 227, 227);
@@ -331,7 +331,7 @@ main>section:nth-child(3)>h1{
 .services-list>div>p{
     position: absolute;
     color: rgb(172, 161, 161);
-    font-size: 3vh;
+    font-size: 1vw;
     font-weight: 550;
     top: 50%;
     left: 8%;
@@ -350,7 +350,7 @@ main>section:nth-child(3)>h1{
 }
 #portfolio{
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     position: relative;
     top: 100vh;
     background-color:#3a0628;
@@ -563,9 +563,6 @@ main>section:nth-child(3)>h1{
     border-radius: 100%;
     text-align: center;
 }
-/* .work-list:hover div img{
-    transform: scale(1.05);
-} */
 .W-section1:hover .layer1{
     width: 100%;
     height: 100%;
@@ -576,231 +573,23 @@ main>section:nth-child(3)>h1{
 .W-section3:hover .layer3{
     height: 100%;
 }
-/* .contents{
-    padding: 0 3vh;
-    border-left: 0.2vw solid #b993a2;
-    font-size: 3vh;
+.btn{
     position: absolute;
-    top: 10vh;
-    left: 45%;
-
-}
-.contents h3{
-    color: #8d003b;
-    font-size: 3vh;
-    font-family: Roboto Flex;
-}
-.contents h4{
-    color: #837d7d;
-    font-family: Roboto Flex;
-    font-size: 2vh;
-}
-.box1{
-    position: relative;
-    padding: 3vw;
-    border: 0.1vw solid #0f0f0f;
-    background-color: #131010;
-    cursor: pointer;
-    transition: all 0.4s;
-    border-radius: 1vw;
-    margin-bottom: -6vh;
-}
-.box2{
-    position:relative;
-    left: -400px;
-    top: 35px;
-    border: 1px solid #0f0f0f;
-    background-color: #131010;
-    padding: 30px; 
-    transition: all 0.4s;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-bottom: -6vh;
-}
-.box1:hover{
-    box-shadow: 0px 3px 40px 0px #d40987;
-    border: 10px solid transparent;
-}
-.box2:hover{
-    box-shadow: 0px 3px 40px 0px #d40987;
-    border: 10px solid transparent
-} */
-/* .img1{
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position:center center;
-    right: 10%;
-    top: 8%;
-    opacity: 55%;
-    width: 35vw;
-    height: 90vh;
-    background-size: cover;
-    overflow: hidden;
-} */
-/* .img2{
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center center;
-    right: 5%;
-    top: 3.5%;
-    width: 46vw;
-    height: 96vh;
-    background-size: cover;
-    overflow: hidden;
-}
-.text1{
-    position: absolute;
-    color: #ffffff;
-    top: 25%;
-    left: 8%;
-    font-size: 4vw;
-    font-family: Roboto Flex;
-    letter-spacing: 5px;
-}
-.text2{
-    color: #8b044c;
-}
-.text3{
-    color: #5f0334;
-    font-size: 5vw;
-}
-.text4{
-    color: #ffffff;
-    position: absolute;
-    top: 52%;
-    left: 8%;
-    font-size: 2.5vw;
-    letter-spacing: 4px;
-    font-family: Roboto  Flex;
-}
-.btn1{
-    position: absolute;
-    color: #ffffff;
-    background-color:#220012;
-    width: 7vw;
-    height: 3vh;
-    font-size: 2.1vh;
-    padding: 10px 20px;
-    top: 64%;
-    overflow: hidden;
-    margin: 8px 0;
-    left: 8%;
-    text-align: center;
-    border-radius: 40px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    text-decoration: none;
-
-
-}
-.btn1:hover{
-    background: #3b0028;
-    color: #ffffff;
-    box-shadow: 0 0 5px #3b0028,
-                0 0 25px #3b0028,
-                0 0 50px #3b0028,
-                0 0 200px #3b0028;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(102, 11, 54, 0.356));
-}
-body>header>div{
-    position: absolute;
-    width: 30vw;
-    display: flex;
-    font-size: 3.5vw;
-    justify-content: space-evenly;
-    bottom: 0;
-    left: 6.5%;
-}
-main{
-    position: absolute;
-    top: 100vh;
-    
-} */
-/* main>section:nth-child(2){
-    background-color: #0f0209;
-} */
-/* main>section:nth-child(1)>div:nth-child(1){
-  position: absolute;
-  left: 0;
-  top: 0;
-} */
-/* .img3{
-    position: absolute;
-    background-image: url("assests/662a1832-2d45-4e5f-8be5-138431c04ffd2.jpg");
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-    overflow: hidden;
-    top: 10vh;
-    left: 5vw;
-    width: 30vw;
-    height: 85vh;
-    border-radius: 4vw;
-}
-main>section:nth-child(2)>hr{
-    position: absolute;
-    color: #acacacab;
-    height: 88vh;
-    left: 40vw;
-    top: 9vh;
-} */
-/* main>section:nth-child(1)>div:nth-child(2){
-    position: absolute;
-    right: 0;
-    top: 0;
-} */
-/* .abt{
-    position: relative;
-    color:#8b044c;
-    top: 10vh;
-    left: 42vw;
-    font-size: 2.9vw;
-    letter-spacing: 0.2vw;
-    font-family: Roboto Flex;
-    font-weight: bolder;
-} */
-/* main>section:nth-child(1)>div:nth-child(2)>p{
-    position: relative;
-    color: #ffffff;
-    font-size: 2.2vw;
-    font-weight:500;
-    left: 42vw;
-    top: 15vh;
-}
-main>section:nth-child(1)>ul{
-    position: relative;
-    top: 20vh;
-    left: 40vw;
-}
-main>section:nth-child(1)>ul>li{
-    list-style: none;
-    margin: 2vh 0;
-    position: relative;
-    color: #ffffff;
-    font-size: 2vw;
-    font-weight:500;
-}
-main>section:nth-child(1)>ul>li>span{
-    color: #8b044c;
-    font-weight: bolder;
-}
-main>section:nth-child(2){
-    position: absolute;
-    bottom: 10vh;
+    top: 85vh;
+    display: block;
+    margin: 2vw;
     width: fit-content;
-}
-main>section:nth-child(2)>div{
-    left: 0;
-    right: 0;
-    position:absolute;
-    width: 100%;
-    background-color: #1d0712;
-}
-main>section:nth-child(2)>div>h1{
-
+    border: 0.2vw solid #570035;
+    text-decoration: none;
+    padding: 2vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    border-radius: 0.6vw;
     color: #ffffff;
-    top: 38vh;
-    left: 5vw;
-    font-size: 3vw;
-
-} */
+    left: 42%;
+    font-size: 2.5vh;
+    transition: background 0.5s;
+}    
+.btn:hover{
+    background: #1d0109;
+}
