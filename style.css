@@ -350,7 +350,7 @@ main>section:nth-child(3)>h1{
 }
 #portfolio{
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     position: relative;
     top: 100vh;
     background-color:#3a0628;
@@ -655,4 +655,48 @@ main>section:nth-child(3)>h1{
 }
 .collapsed{
     display: none;
+}
+#assignments{
+    position: relative;
+    top: 100vh;
+    left: 0;
+}
+#assignments>h2{
+    color: white;
+    font-size: 5vh;
+    left: 5%;
+    position: absolute;
+}
+.slide-wrapper{
+    /* left: 1vw; */
+    left: 0;
+    margin-left: 0;
+    text-align: left;
+    align-self: self-start;
+    position: relative;
+}
+.slider{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 5vw;
+   
+}
+.slider>div{
+    top: 15vh;
+}
+.slider>div>a>svg{
+    font-size: 3vw;
+    /* left: 2.5vw; */
+    top: 20vh;
+    position: absolute;
+    
+}
+.slider>div>a>span{
+    top: 35vh;
+    position: absolute;
+    font-size: 2vw;
+    /* left: 10%; */
+    color: rgb(163, 156, 156);
 }
