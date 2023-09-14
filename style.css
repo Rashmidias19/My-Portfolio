@@ -418,6 +418,61 @@ main>section:nth-child(3)>h1{
     width: 23vw;
     height: 60vh;
 }
+.W-section4{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(7vw,1fr)); */
+    grid-gap: 1vw;
+    margin-top: 1vh;
+    border: 0.5vw #837d7d; 
+    background-color: #272727;
+    position: absolute;
+    padding: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    position: absolute;
+    top:15vh;
+    border-radius: 2vw;
+    left: 5%;
+    width: 23vw;
+    height: 60vh;
+    
+}
+.W-section5{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(7vw,1fr)); */
+    grid-gap: 1vw;
+    margin-top: 1vh;
+    border: 0.5vw #837d7d; 
+    background-color: #272727;
+    position: absolute;
+    padding: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    position: absolute;
+    top:15vh;
+    border-radius: 2vw;
+    left: 35%;
+    width: 23vw;
+    height: 60vh;
+}
+.W-section{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(7vw,1fr)); */
+    grid-gap: 1vw;
+    margin-top: 1vh;
+    border: 0.5vw #837d7d; 
+    background-color: #272727;
+    position: absolute;
+    padding: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    position: absolute;
+    top:15vh;
+    border-radius: 2vw;
+    left: 65%;
+    width: 23vw;
+    height: 60vh;
+}
 .work-list div div i{
     font-size:4vh;
     position: absolute;
@@ -587,9 +642,17 @@ main>section:nth-child(3)>h1{
     border-radius: 0.6vw;
     color: #ffffff;
     left: 42%;
+    background-color:transparent;
     font-size: 2.5vh;
     transition: background 0.5s;
 }    
 .btn:hover{
     background: #1d0109;
+}
+.para{
+    display: block;
+    top: 50vh;
+}
+.collapsed{
+    display: none;
 }
