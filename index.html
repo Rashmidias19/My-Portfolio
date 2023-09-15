@@ -23,6 +23,10 @@
     <link href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Arial&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/49a731d95a.js" crossorigin="anonymous"></script>
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="lightbox.css">
+    <script  src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
 </head>
 <body>
@@ -171,58 +175,160 @@
                         <div class="slider">
                             <div class="box3">
                                 <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><style>svg{fill:#b3b3b3}</style><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16h48v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm48 112c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H128c-8.8 0-16 7.2-16 16zm0 64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H128c-8.8 0-16 7.2-16 16zm-6.3 71.8L82.1 335.9c-1.4 5.4-2.1 10.9-2.1 16.4c0 35.2 28.8 63.7 64 63.7s64-28.5 64-63.7c0-5.5-.7-11.1-2.1-16.4l-23.5-88.2c-3.7-14-16.4-23.8-30.9-23.8H136.6c-14.5 0-27.2 9.7-30.9 23.8zM128 336h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H128c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-                                <br>
+                                    <i class="fa-regular fa-file-zipper fa-fade fa-2xl" style="color: #b3b3b3;"></i> <br>
                                     <span>Assignment-1</span>
                                 </a>
                             </div>
                             <div id="box4">
                                 <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><style>svg{fill:#b3b3b3}</style><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16h48v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm48 112c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H128c-8.8 0-16 7.2-16 16zm0 64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H128c-8.8 0-16 7.2-16 16zm-6.3 71.8L82.1 335.9c-1.4 5.4-2.1 10.9-2.1 16.4c0 35.2 28.8 63.7 64 63.7s64-28.5 64-63.7c0-5.5-.7-11.1-2.1-16.4l-23.5-88.2c-3.7-14-16.4-23.8-30.9-23.8H136.6c-14.5 0-27.2 9.7-30.9 23.8zM128 336h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H128c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-                                <br>
+                                    <i class="fa-regular fa-file-zipper fa-fade fa-2xl" style="color: #b3b3b3;"></i><br>
                                     <span>Assignment-2</span>
                                 </a>
                             </div>
                             <div id="box5">
                                 <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><style>svg{fill:#b3b3b3}</style><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16h48v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm48 112c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H128c-8.8 0-16 7.2-16 16zm0 64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H128c-8.8 0-16 7.2-16 16zm-6.3 71.8L82.1 335.9c-1.4 5.4-2.1 10.9-2.1 16.4c0 35.2 28.8 63.7 64 63.7s64-28.5 64-63.7c0-5.5-.7-11.1-2.1-16.4l-23.5-88.2c-3.7-14-16.4-23.8-30.9-23.8H136.6c-14.5 0-27.2 9.7-30.9 23.8zM128 336h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H128c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-                                <br>
+                                    <i class="fa-regular fa-file-zipper fa-fade fa-2xl" style="color: #b3b3b3;"></i>  <br>
                                     <span>Assignment-3</span>
                                 </a>
                             </div>
                             <div id="box6">
                                 <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><style>svg{fill:#b3b3b3}</style><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16h48v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm48 112c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H128c-8.8 0-16 7.2-16 16zm0 64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H128c-8.8 0-16 7.2-16 16zm-6.3 71.8L82.1 335.9c-1.4 5.4-2.1 10.9-2.1 16.4c0 35.2 28.8 63.7 64 63.7s64-28.5 64-63.7c0-5.5-.7-11.1-2.1-16.4l-23.5-88.2c-3.7-14-16.4-23.8-30.9-23.8H136.6c-14.5 0-27.2 9.7-30.9 23.8zM128 336h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H128c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-                                <br>
+                                    <i class="fa-regular fa-file-zipper fa-fade fa-2xl" style="color: #b3b3b3;"></i>  <br>
                                     <span>Assignment-4</span>
                                 </a>
                             </div>
                             <div id="box7">
                                 <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><style>svg{fill:#b3b3b3}</style><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16h48v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm48 112c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H128c-8.8 0-16 7.2-16 16zm0 64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H128c-8.8 0-16 7.2-16 16zm-6.3 71.8L82.1 335.9c-1.4 5.4-2.1 10.9-2.1 16.4c0 35.2 28.8 63.7 64 63.7s64-28.5 64-63.7c0-5.5-.7-11.1-2.1-16.4l-23.5-88.2c-3.7-14-16.4-23.8-30.9-23.8H136.6c-14.5 0-27.2 9.7-30.9 23.8zM128 336h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H128c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-                                <br>
+                                    <i class="fa-regular fa-file-zipper fa-fade fa-2xl" style="color: #b3b3b3;"></i>  <br>
                                     <span>Assignment-5</span>
                                 </a>
                             </div>
                             <div id="box8">
                                 <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><style>svg{fill:#b3b3b3}</style><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16h48v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm48 112c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H128c-8.8 0-16 7.2-16 16zm0 64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H128c-8.8 0-16 7.2-16 16zm-6.3 71.8L82.1 335.9c-1.4 5.4-2.1 10.9-2.1 16.4c0 35.2 28.8 63.7 64 63.7s64-28.5 64-63.7c0-5.5-.7-11.1-2.1-16.4l-23.5-88.2c-3.7-14-16.4-23.8-30.9-23.8H136.6c-14.5 0-27.2 9.7-30.9 23.8zM128 336h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H128c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-                                <br>
+                                    <i class="fa-regular fa-file-zipper fa-fade fa-2xl" style="color: #b3b3b3;"></i>  <br>
                                     <span>Assignment-6</span>
                                 </a>
                             </div>
-                        </div>
-                        <div class="slider-nav">
-                            <a href="#box1"></a>
-                            <a href="#box2"></a>
-                            <a href="#box3"></a>
-                            <a href="#box4"></a>
-                            <a href="#box5"></a>
-                            <a href="#box6"></a>
-                        </div>
+                            <div id="box8">
+                                <a href="">
+                                    <i class="fa-regular fa-file-zipper fa-fade fa-2xl" style="color: #b3b3b3;"></i>  <br>
+                                    <span>Assignment-7</span>
+                                </a>
+                            </div>
+                            <a href="">
+                                <i class="fa-solid fa-angles-right fa-fade fa-2xl" style="color: #c7c7c7;"></i>
+                        
+                            </a>
+                            </div>
+                        
                     </div>
                  
                 </section>
+                <section class="technology">
+                    <h2 class="txt1">Technology Stack</h2>
+                    <div class="stack">
+                        <a href=""><img class="i-1" src="assests/html-5.png" alt=""></a>
+                        <a href=""><img class="i-2"  src="assests/css-3.png" alt=""></a>
+                        <a href=""><img class="i-3"  src="assests/js.png" alt=""></a>
+                        <a href=""><img class="i-4"  src="assests/java.png" alt=""></a>
+                        <a href=""><img class="i-5"  src="assests/python1.png" alt=""></a>
+                        <a href=""><img class="i-6"  src="assests/figma.png" alt=""></a>
+                        <a href=""><img class="i-7"  src="assests/nodejs.png" alt=""></a>
+                        <a href=""><img class="i-8"  src="assests/download.png" alt=""></a>
+                        <a href=""><img class="i-9"  src="assests/linux.png" alt=""></a>
+                        <a href=""><img class="i-10"  src="assests/mysql.png" alt=""></a>
+                        <a href=""><img class="i-11"  src="assests/git.png" alt=""></a>
+                        <a href=""><img class="i-12"  src="assests/bootstrap.png" alt=""></a>
+                        <a href=""><img class="i-13" style="height: 10vh;"  src="assests/download1.png" alt=""></a>
+                        <a href=""><img class="i-14"  src="assests/oracle.png" alt=""></a>
+                    </div>
+                </section>
+                <section class="certifications">
+                    <h2>Certifications</h2>
+       <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href=""><img src="assests/Screenshot242.png" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href=""><img src="assests/Screenshot188.png" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href=""><img src="assests/Screenshot186.png" /></a>
+              </div>
+          <div class="swiper-slide">
+            <a href=""><img src="assests/Screenshot239.png" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="assests/Screenshot248.png" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="assests/Screenshot241.png" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="assests/Screenshot234.png" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""> <img src="assests/Screenshot236.png" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="assests/eyJuYW1lIjoiTiBXIEEgUmFzaG1pIFMgRGlhcyIsImNvdXJzZSI6IkNvdXJzZSBDICgyMDIyKSJ9.jpg" /></a>
+        </a>  
+        </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+                </section>
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                      effect: "coverflow",
+                      grabCursor: true,
+                      centeredSlides: true,
+                      slidesPerView: 3,
+                      coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: false,
+                      },
+                      pagination: {
+                        el: ".swiper-pagination",
+                      },
+                    });
+                  </script>
+            </section>
+            <section id="gallery">
+                <h2>Gallery</h2>
+    <div class="gallery">
+        <a target="_blank" href="assests/f0a64b1f-b581-4a81-aa80-21e590006e671.jpg" data-lightbox="me" data-title="Caption-01">
+            <img class="g-1" src="assests/f0a64b1f-b581-4a81-aa80-21e590006e671.jpg" alt="">
+        </a>
+        <a target="_blank" href="assests/e1439571-1805-46f0-b23f-0d535d3deaf1.jpg" data-lightbox="me" data-title="Caption-02">
+            <img class="g-2" src="assests/e1439571-1805-46f0-b23f-0d535d3deaf1.jpg" alt="">
+        </a>
+        <a target="_blank" href="assests/20cfe74b-adae-48a1-a3a7-c4342abac046.jpg" data-lightbox="me" data-title="Caption-03">
+            <img class="g-3" src="assests/20cfe74b-adae-48a1-a3a7-c4342abac046.jpg" alt="">
+        </a>
+        <a target="_blank" href="assests/fa16dd7a-b2fa-45e1-b88e-3167f6c25ddc.jpg" data-lightbox="me" data-title="Caption-04">
+            <img class="g-4" src="assests/fa16dd7a-b2fa-45e1-b88e-3167f6c25ddc.jpg" alt="">
+        </a>
+        <a target="_blank" href="assests/d4a66b46-72bb-40c2-86f2-3f834f5f2773.jpg" data-lightbox="me" data-title="Caption-05">
+            <img class="g-5" src="assests/d4a66b46-72bb-40c2-86f2-3f834f5f2773.jpg" alt="">
+        </a>
+        <a target="_blank" href="assests/f8d331e1-88b7-4267-8ce4-c264c1570a3c.jpg" data-lightbox="me" data-title="Caption-06">
+            <img class="g-6" src="assests/f8d331e1-88b7-4267-8ce4-c264c1570a3c.jpg" alt="">
+        </a>
+        <a target="_blank" href="assests/0d42811a-622e-4533-9c81-4d0020c8c1a9.jpg" data-lightbox="me" data-title="Caption-07">
+            <img class="g-7" src="assests/0d42811a-622e-4533-9c81-4d0020c8c1a9.jpg" alt="">
+        </a>
+        <a target="_blank" href="assests/4f43cb29-15f7-43b6-9e17-5409df026707.jpg" data-lightbox="me" data-title="Caption-08">
+            <img class="g-8" src="assests/4f43cb29-15f7-43b6-9e17-5409df026707.jpg" alt="">
+        </a>
+        <a target="_blank" href="assests/bf882f85-5d1b-4d3f-90fc-ec0207aae9a8.jpg" data-lightbox="me" data-title="Caption-09">
+            <img class="g-9" src="assests/bf882f85-5d1b-4d3f-90fc-ec0207aae9a8.jpg" alt="">
+        </a>
+    </div>
             </section>
         </main>
    
