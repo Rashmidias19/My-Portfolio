@@ -1,4 +1,4 @@
 function collapse(){
     var para=document.getElementById("para");
-    para.classList.toggle("collapsed");
+    para.classList.toggle("");
 }

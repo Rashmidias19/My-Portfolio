@@ -670,7 +670,10 @@ main>section:nth-child(3)>h1{
 .slide-wrapper{
     /* left: 1vw; */
     left: 0;
-    margin-left: 0;
+    margin: 0 auto;
+    padding: 2vw;
+    max-width: 70vw;
+    top: 5vh;
     text-align: left;
     align-self: self-start;
     position: relative;
@@ -680,11 +683,28 @@ main>section:nth-child(3)>h1{
     position: relative;
     flex-direction: row;
     justify-content: space-between;
-    left: 5vw;
+    /* left: 5vw; */
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+    aspect-ratio: 16/9;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem --0.75rem hsla(0,0%, 0%, 0.25);
+    border-radius: 1vw;
    
 }
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
 .slider>div{
-    top: 15vh;
+   flex: 100% 0 100%;
+   scroll-snap-align: start;
+   object-fit: cover;
 }
 .slider>div>a>svg{
     font-size: 3vw;
@@ -699,4 +719,16 @@ main>section:nth-child(3)>h1{
     font-size: 2vw;
     /* left: 10%; */
     color: rgb(163, 156, 156);
+}
+.slider-nav>a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav>a:hover{
+    opacity: 1;
+
 }
