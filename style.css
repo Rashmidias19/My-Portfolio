@@ -59,7 +59,7 @@ header>nav>ul>a>li:hover::after{
     font-weight: normal;
 }
 .title2{
-    color: #2b021b;
+    color: #000000;
 }
 body>main{
     position: relative;
@@ -148,13 +148,99 @@ main>section:nth-child(1){
 
 }
 .btn1:hover{
-    background: #333031;
+    background: #000000;
     color: #ffffff;
     box-shadow: 0 0 5px #8b8689,
                 0 0 25px #8b8689,
                 0 0 50px #8b8689,
                 0 0 200px #8b8689;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(102, 11, 54, 0.356));
+     -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(161, 160, 161, 0.356));
+}
+.btn1:nth-child(1){
+    filter: hue-rotate(270deg);
+    border-radius: 40px;
+}
+.btn1:nth-child(2){
+    filter: hue-rotate(110deg);
+    border-radius: 40px;
+}
+.btn1 span{
+    position: absolute;
+    display: block;
+    border-radius: 40px;
+}
+.btn1 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#ffffff);
+    animation: animate1 1s linear infinite;
+    border-radius: 40px;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.btn1 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#ffffff);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+    border-radius: 40px;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.btn1 span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#ffffff);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+    border-radius: 40px;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.btn1 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#ffffff);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+    border-radius: 40px;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
 }
 .iconlist{
     position: absolute;
