@@ -658,7 +658,7 @@ main>section:nth-child(3)>h1{
 }
 #assignments{
     position: relative;
-    top: 100vh;
+    top: 30%;
     left: 0;
 }
 #assignments>h2{
