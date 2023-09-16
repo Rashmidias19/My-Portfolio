@@ -1033,3 +1033,16 @@ main>section:nth-child(3)>h1{
     z-index: 999;
     cursor: pointer;
 }
+.last-button:active {
+    transform: scale(1.01);
+}
+.copyright{
+    position: absolute;
+    color: #ffffff;
+    bottom: 0;
+    left: 43%;
+    font-weight: bolder;
+    right: 0;
+    margin: auto;
+    font-size: 1vw;
+}
