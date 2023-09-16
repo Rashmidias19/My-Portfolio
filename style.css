@@ -1005,4 +1005,31 @@ main>section:nth-child(3)>h1{
 }
 #message{
     position: absolute;
+    left: 49%;
+    top: 37vh;
+    width: 40.6vw;
+    font-weight: bolder;
+    color: #8a8282;
+    height: 25vh;
+    border-radius: 0.2vw;
+    font-size: 1vw;
+    background-color: #333333;
+    border: 0.1vw solid rgb(51, 49, 50);
+}
+.last-button{
+    position: absolute;
+    background-color: #6d021c;
+    font-family: Roboto Flex;
+    font-size: 1vw;
+    top: 70vh;
+    left: 49%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: #ffffff;
+    border-radius: 1vw;
+    border: #2e010e;
+    z-index: 999;
+    cursor: pointer;
 }
