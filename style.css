@@ -59,7 +59,7 @@ header>nav>ul>a>li:hover::after{
     font-weight: normal;
 }
 .title2{
-    color: #8b044c;;
+    color: #2b021b;
 }
 body>main{
     position: relative;
@@ -68,7 +68,7 @@ main>div:nth-child(1){
     width: 100%;
     height: 100vh;
     position: absolute;
-    background: url("assests/photo_2023-06-27_21-35-40.jpg");
+    background: url("assests/black-abstract-background-wallpaper-image.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -83,9 +83,9 @@ main>section:nth-child(1){
     position: absolute;
     background-repeat: no-repeat;
     background-position:center center;
-    right: 5vw;
+    right:10vw;
     top: 10vh;
-    opacity: 55%;
+    opacity: 50%;
     width: 35vw;
     height: 90vh;
     background-size: cover;
@@ -95,9 +95,9 @@ main>section:nth-child(1){
     position: absolute;
     background-repeat: no-repeat;
     background-position: center center;
-    right: 5%;
+    right: 2%;
     top: 0;
-    width: 40vw;
+    width: 49vw;
     height: 99.8vh;
     background-size: cover;
     overflow: hidden;
@@ -112,10 +112,10 @@ main>section:nth-child(1){
     letter-spacing: 5px;
 }
 .text2{
-    color: #8b044c;
+    color: #000000;
 }
 .text3{
-    color: #5f0334;
+    color:  #000000;
     font-size: 3.5vw;
 }
 .text4{
@@ -130,7 +130,7 @@ main>section:nth-child(1){
 .btn1{
     position: absolute;
     color: #ffffff;
-    background-color:#220012;
+    background-color: #110e10;
     width: 7vw;
     height: 3vh;
     font-size: 2.1vh;
@@ -148,12 +148,12 @@ main>section:nth-child(1){
 
 }
 .btn1:hover{
-    background: #3b0028;
+    background: #333031;
     color: #ffffff;
-    box-shadow: 0 0 5px #3b0028,
-                0 0 25px #3b0028,
-                0 0 50px #3b0028,
-                0 0 200px #3b0028;
+    box-shadow: 0 0 5px #8b8689,
+                0 0 25px #8b8689,
+                0 0 50px #8b8689,
+                0 0 200px #8b8689;
      -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(102, 11, 54, 0.356));
 }
 .iconlist{
@@ -171,7 +171,7 @@ main>section:nth-child(3){
     height: 170vh;
     position: relative;
     top: 100vh;
-    background-color:#3b0028;
+    background-color:#383637;
 }
 #aboutMe>img{
     position: relative;
@@ -190,7 +190,7 @@ main>section:nth-child(3){
 }
 .abt{
     position: absolute;
-    color:#8b044c;
+    color:#070607;
     top: 10vh;
     left: 42vw;
     font-size: 2.9vw;
@@ -220,7 +220,7 @@ main>section:nth-child(3)>ul>li{
     font-weight:500;
 }
 main>section:nth-child(3)>ul>li>span{
-    color: #8b044c;
+    color: #110e10;
     font-weight: bolder;
 }
 main>section:nth-child(3)>h1{
@@ -232,15 +232,16 @@ main>section:nth-child(3)>h1{
 }
 .contents{
     padding: 0 3vh;
-    border-left: 0.2vw solid #b993a2;
+    border-left: 0.2vw solid #a79ea1;
     font-size: 3vh;
+    height: 50vh;
     position: absolute;
     top: 110vh;
     left: 45%;
 
 }
 .contents h3{
-    color: #8d003b;
+    color: #615f60;
     font-size: 3vh;
     font-family: Roboto Flex;
 }
@@ -252,8 +253,8 @@ main>section:nth-child(3)>h1{
 .box1{
     position: relative;
     padding: 1vw;
-    border: 0.1vw solid #0f0f0f;
-    background-color: #131010;
+    border: 0.1vw solid #1f1e1e;
+    background-color: #1f1e1e;
     cursor: pointer;
     transition: all 0.4s;
     border-radius: 1vw;
@@ -264,8 +265,8 @@ main>section:nth-child(3)>h1{
     left: -110%;
     top: 5vh;
     width: 20vw;
-    border: 0.1vw solid #0f0f0f;
-    background-color: #131010;
+    border: 0.1vw solid#1f1e1e;
+    background-color: #1f1e1e;
     padding: 1vh; 
     transition: all 0.4s;
     cursor: pointer;
@@ -273,11 +274,11 @@ main>section:nth-child(3)>h1{
     margin-bottom: -6vh;
 }
 .box1:hover{
-    box-shadow: 0px 3px 40px 0px #d40987;
+    box-shadow: 0px 3px 40px 0px #7c767a;
     border: 10px solid transparent;
 }
 .box2:hover{
-    box-shadow: 0px 3px 40px 0px #d40987;
+    box-shadow: 0px 3px 40px 0px #7c767a;
     border: 10px solid transparent
 }
 #service{
@@ -285,7 +286,7 @@ main>section:nth-child(3)>h1{
     height: 100vh;
     position: relative;
     top: 100vh;
-    background-color:#3a0628;
+    background-color:#383637;
 }
 .ser{
     position: absolute;
@@ -309,7 +310,7 @@ main>section:nth-child(3)>h1{
 .services-list>div{
     width: 25vw;
     height: 60vh;
-    background-color: #333333;
+    background-color: #241f1f;
     margin: 1.8vw;
     position: relative;
     border-radius: 2vw;
@@ -345,7 +346,7 @@ main>section:nth-child(3)>h1{
     position: absolute;
 }
 .services-list div:hover{
-    background: #29021d;
+    background: #110e0e;
     transform: translateY(-10px);
 }
 #portfolio{
@@ -353,7 +354,7 @@ main>section:nth-child(3)>h1{
     height: 325vh;
     position: relative;
     top: 100vh;
-    background-color:#3a0628;
+    background-color:#383637;
 }
 .work{
     font-family: Roboto Flex;
@@ -537,7 +538,7 @@ main>section:nth-child(3)>h1{
 .layer1{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgb(0,0,0,0.6),#8a042c);
+    background: linear-gradient(rgb(0,0,0,0.6),#1f1d1d);
     border-radius: 2vw;
     position: absolute;
     left: 0;
@@ -555,7 +556,7 @@ main>section:nth-child(3)>h1{
 .layer2{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgb(0,0,0,0.6),#8a042c);
+    background: linear-gradient(rgb(0,0,0,0.6),#1f1d1d);
     border-radius: 2vw;
     position: absolute;
     left: 0;
@@ -573,7 +574,7 @@ main>section:nth-child(3)>h1{
 .layer3{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgb(0,0,0,0.6),#8a042c);
+    background: linear-gradient(rgb(0,0,0,0.6),#1f1d1d);
     border-radius: 2vw;
     position: absolute;
     left: 0;
@@ -589,7 +590,7 @@ main>section:nth-child(3)>h1{
     transition: height 1s;
 }
 .layer1 a i{
-    color: #e93c70;
+    color: #000000;
     font-size: 4vh;
     margin-top: 2vh;
     line-height: 5vh;
@@ -599,7 +600,7 @@ main>section:nth-child(3)>h1{
     text-align: center;
 }
 .layer2 a i{
-    color: #e93c70;
+    color: #000000;
     font-size: 4vh;
     margin-top: 2vh;
     line-height: 5vh;
@@ -609,7 +610,7 @@ main>section:nth-child(3)>h1{
     text-align: center;
 }
 .layer3 a i{
-    color: #e93c70;
+    color: #000000;
     font-size: 4vh;
     margin-top: 2vh;
     line-height: 5vh;
@@ -634,7 +635,7 @@ main>section:nth-child(3)>h1{
     display: block;
     margin: 2vw;
     width: fit-content;
-    border: 0.2vw solid #570035;
+    border: 0.2vw solid #141314;
     text-decoration: none;
     padding: 2vh;
     padding-left: 3vw;
@@ -647,7 +648,7 @@ main>section:nth-child(3)>h1{
     transition: background 0.5s;
 }    
 .btn:hover{
-    background: #1d0109;
+    background: #1f1b1b;
 }
 .para{
     display: block;
@@ -777,7 +778,7 @@ main>section:nth-child(3)>h1{
     height: 120vh;
     position: relative;
     top: 100vh;
-    background-color:#3a0628;
+    background-color:#383637;
 } 
 #gallery>h2{
     color: white;
@@ -890,7 +891,7 @@ main>section:nth-child(3)>h1{
     height: 120vh;
     position: relative;
     top: 100vh;
-    background-color:#3a0628;
+    background-color:#383637;
     color: #837d7d;
     place-items: center;
 } 
@@ -952,7 +953,7 @@ main>section:nth-child(3)>h1{
 }
 .cv.btn5{
     display: inline-block;
-    background: #6d021c;
+    background: #1f1e1e;
     font-family: Roboto Flex;
     font-size: 1.5vw;
     color: #ffffff;
@@ -974,8 +975,8 @@ main>section:nth-child(3)>h1{
     border-radius: 0.2vw;
     font-weight: bolder;
     font-size: 1vw;
-    border: 0.1vw solid rgb(51, 49, 50);
-    background-color: #333333;
+    border: 0.1vw solid rgb(66, 63, 65);
+    background-color: #494848;
 }
 #email{
     position: absolute;
@@ -985,8 +986,8 @@ main>section:nth-child(3)>h1{
     font-weight: bolder;
     border-radius: 0.2vw;
     font-size: 1vw;
-    background-color: #333333;
-    border: 0.1vw solid rgb(51, 49, 50);
+    background-color:  #494848;
+    border: 0.1vw solid  rgb(66, 63, 65);
     height: 4.5vh;
     top: 20vh;
 }
@@ -1000,8 +1001,8 @@ main>section:nth-child(3)>h1{
     height: 4.5vh;
     border-radius: 0.2vw;
     font-size: 1vw;
-    background-color: #333333;
-    border: 0.1vw solid rgb(51, 49, 50);
+    background-color: #494848;
+    border: 0.1vw solid rgb(66, 63, 65);
 }
 #message{
     position: absolute;
@@ -1013,12 +1014,12 @@ main>section:nth-child(3)>h1{
     height: 25vh;
     border-radius: 0.2vw;
     font-size: 1vw;
-    background-color: #333333;
-    border: 0.1vw solid rgb(51, 49, 50);
+    background-color:  #494848;
+    border: 0.1vw solid rgb(66, 63, 65);
 }
 .last-button{
     position: absolute;
-    background-color: #6d021c;
+    background-color: #181515;
     font-family: Roboto Flex;
     font-size: 1vw;
     top: 70vh;
