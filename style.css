@@ -257,7 +257,7 @@ main>section:nth-child(1){
 }
 main>section:nth-child(3){
     width: 100%;
-    height: 170vh;
+    height: 200vh;
     position: relative;
     top: 100vh;
     background-color:#383637;
@@ -289,23 +289,23 @@ main>section:nth-child(3){
 }
 main>section:nth-child(3)>p{
     position: absolute;
-    color: #ffffff;
-    font-size: 2.2vw;
+    color: #a8a8a8;
+    font-size: 1.8vw;
     font-weight:500;
     left: 42vw;
-    top: 20vh;
+    top: 22vh;
 }
 main>section:nth-child(3)>ul{
     position: absolute;
     top: 50vh;
-    left: 41.5vw;
+    left: 40vw;
 }
 main>section:nth-child(3)>ul>li{
     list-style: none;
     /* margin: 2vh 0; */
     position: relative;
-    color: #ffffff;
-    font-size: 2vw;
+    color: #8f8f8f;
+    font-size: 1.7vw;
     font-weight:500;
 }
 main>section:nth-child(3)>ul>li>span{
@@ -323,7 +323,7 @@ main>section:nth-child(3)>h1{
     padding: 0 3vh;
     border-left: 0.2vw solid #a79ea1;
     font-size: 3vh;
-    height: 50vh;
+    height: 64vh;
     position: absolute;
     top: 110vh;
     left: 45%;
@@ -331,7 +331,7 @@ main>section:nth-child(3)>h1{
 }
 .contents h3{
     color: #615f60;
-    font-size: 3vh;
+    font-size: 2.2vh;
     font-family: Roboto Flex;
 }
 .contents h4{
@@ -341,7 +341,7 @@ main>section:nth-child(3)>h1{
 }
 .box1{
     position: relative;
-    padding: 1vw;
+    padding: 2vw;
     border: 0.1vw solid #1f1e1e;
     background-color: #1f1e1e;
     cursor: pointer;
@@ -353,10 +353,10 @@ main>section:nth-child(3)>h1{
     position:relative;
     left: -110%;
     top: 5vh;
-    width: 20vw;
+    width: 25vw;
     border: 0.1vw solid#1f1e1e;
     background-color: #1f1e1e;
-    padding: 1vh; 
+    padding: 2vw; 
     transition: all 0.4s;
     cursor: pointer;
     border-radius: 1vw;
