@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+        div{
+            overflow: hidden;
+            width: 400%;
+            position: relative;
+            margin: 0;
+            left: 0;
+            animation: 10s slider infinite;
+            animation-direction: alternate;
+        }
+        div img{
+            width: 25%;
+            float: left;
+        }
+
+        @keyframes slider {
+            0%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+            }
+            50%{
+                left: -200%;
+            }
+            75%{
+                left: -300%;
+            }
+            100%{
+                left: -300%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div>
+        <img src="download (2).jpeg">
+        <img src="download.jpeg">
+        <img src="download (3).jpeg">
+        <img src="download1.jpeg">
+ 
+</div>
+</body>
+</html>
