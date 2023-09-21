@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        div{
+            position: relative;
+            background-color: blue;
+            width:20vw ;
+            height: 10vh;
+            top: 0;
+            left: 2%;
+            border-radius: 1vw;
+            animation-name: anim;
+            animation-iteration-count: 5;
+            position: relative;
+            animation-delay: 1s;
+            animation-duration: 5s;
+            animation-direction: alternate;
+        }
+        @keyframes anim{
+            0%{
+                top: 0;
+                left: 2%;
+                background-color: rgb(8, 8, 29);
+                transform: rotate(0deg);
+            }
+            25%{
+                top: 87vh;
+                left: 2%;
+                background-color: red;
+                transform: rotate(180deg);
+            }
+            50%{
+                top: 80vh;
+                left: 80%;
+                background-color: yellow;
+                transform: rotate(360deg);
+            }
+            75%{
+                top: 5%;
+                left: 80%;
+                background-color: aqua;
+                transform: rotate(180deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
