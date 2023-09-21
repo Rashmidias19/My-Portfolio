@@ -1814,7 +1814,7 @@ main>section:nth-child(3)>h1{
         
     }
     .slider>div>a>span{
-        top: 18vh;
+        top: 13vh;
         position: absolute;
         font-size: 1.5vw;
         margin-left: 9vw;
@@ -1828,7 +1828,7 @@ main>section:nth-child(3)>h1{
     }
     .technology{
         position: relative;
-        top: 200vh;
+        top: 205vh;
         left: 0;
     }
     .txt1{
@@ -1905,7 +1905,7 @@ main>section:nth-child(3)>h1{
         color: white;
         position: absolute;
         font-size: 3vw;
-        top: 0;
+        top: 20vh;
         text-align: center;
         left: 42%;
     }
