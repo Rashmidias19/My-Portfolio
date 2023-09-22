@@ -1775,7 +1775,7 @@ main>section:nth-child(3)>h1{
     }
     #assignments{
         position: relative;
-        top: 220vh;
+        top: 230vh;
         left: 0;
     }
     #assignments>h2{
@@ -1829,7 +1829,7 @@ main>section:nth-child(3)>h1{
     }
     .technology{
         position: relative;
-        top: 205vh;
+        top: 220vh;
         left: 0;
     }
     .txt1{
@@ -1860,7 +1860,7 @@ main>section:nth-child(3)>h1{
     }
     .certifications{
         position: relative;
-        top: 210vh;
+        top: 220vh;
         left: 0;
         margin: 0;
         padding: 0;
@@ -2120,7 +2120,7 @@ main>section:nth-child(3)>h1{
     }
     #contact{
         width: 100%;
-        height: 70vh;
+        height: 80vh;
         position: relative;
         top: 100vh;
         background-color:#383637;
@@ -2178,26 +2178,24 @@ main>section:nth-child(3)>h1{
     }
     .cv{
         position: absolute;
-        top: 65vh;
+        top: 67vh;
         border: 0.1vw #312e2e;
         background-color: #312e2e;
         padding: 2vw;
-        display: none;
     }
     .cv.btn5{
         display: inline-block;
         background: #1f1e1e;
         font-family: Roboto Flex;
-        font-size: 1.5vw;
+        font-size: 2.5vw;
         color: #ffffff;
         border-radius: 1.5vw;
         padding-right: 1.9vw;
         padding-top: 1.7vh;
         padding-bottom: 1.7vh;
-        left: 5%;
+        left: 37%;
         text-decoration: none;
         text-align: center;
-        display: none;
     }
     #name{
         position: absolute;
@@ -2604,7 +2602,7 @@ main>section:nth-child(3)>h1{
     }
     #portfolio{
         width: 100%;
-        height: 300vh;
+        height: 310vh;
         position: relative;
         top: 100vh;
         background-color:#383637;
@@ -2914,7 +2912,7 @@ main>section:nth-child(3)>h1{
     }
     #assignments{
         position: relative;
-        top: 220vh;
+        top: 225vh;
         left: 0;
     }
     #assignments>h2{
@@ -2968,7 +2966,7 @@ main>section:nth-child(3)>h1{
     }
     .technology{
         position: relative;
-        top: 205vh;
+        top: 210vh;
         left: 0;
     }
     .txt1{
@@ -2999,7 +2997,7 @@ main>section:nth-child(3)>h1{
     }
     .certifications{
         position: relative;
-        top: 210vh;
+        top: 220vh;
         left: 0;
         margin: 0;
         padding: 0;
@@ -3259,7 +3257,7 @@ main>section:nth-child(3)>h1{
     }
     #contact{
         width: 100%;
-        height: 70vh;
+        height: 80vh;
         position: relative;
         top: 100vh;
         background-color:#383637;
@@ -3317,7 +3315,7 @@ main>section:nth-child(3)>h1{
     }
     .cv{
         position: absolute;
-        top: 65vh;
+        top: 67vh;
         border: 0.1vw #312e2e;
         background-color: #312e2e;
         padding: 2vw;
@@ -3327,16 +3325,15 @@ main>section:nth-child(3)>h1{
         display: inline-block;
         background: #1f1e1e;
         font-family: Roboto Flex;
-        font-size: 1.5vw;
+        font-size: 2vw;
         color: #ffffff;
         border-radius: 1.5vw;
         padding-right: 1.9vw;
         padding-top: 1.7vh;
         padding-bottom: 1.7vh;
-        left: 5%;
+        left: 40%;
         text-decoration: none;
         text-align: center;
-        display: none;
     }
     #name{
         position: absolute;
