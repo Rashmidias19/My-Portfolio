@@ -1338,15 +1338,15 @@ main>section:nth-child(3)>h1{
     }
     main>section:nth-child(3)>h1{
         color: #ffffff;
-        font-size: 4.8vh;
+        font-size: 11vw;
         top: 100vh;
         left: 4.5%;
         position: absolute;
     }
     .contents{
-        padding: 0 3vh;
+        padding: 0 3vw;
         border-left: 0.2vw solid #a79ea1;
-        font-size: 3vh;
+        font-size: 3vw;
         height: 55vh;
         position: absolute;
         top: 110vh;
@@ -1355,13 +1355,13 @@ main>section:nth-child(3)>h1{
     }
     .contents h3{
         color: #615f60;
-        font-size: 2.2vh;
+        font-size: 6vw;
         font-family: Roboto Flex;
     }
     .contents h4{
         color: #837d7d;
         font-family: Roboto Flex;
-        font-size: 2vh;
+        font-size: 3vw;
     }
     .box1{
         position: relative;
@@ -1371,7 +1371,7 @@ main>section:nth-child(3)>h1{
         cursor: pointer;
         transition: all 0.4s;
         border-radius: 1vw;
-        margin-bottom: 5vh;
+        margin-bottom: 5vw;
     }
     .box2{
         position:relative;
@@ -1384,15 +1384,15 @@ main>section:nth-child(3)>h1{
         transition: all 0.4s;
         cursor: pointer;
         border-radius: 1vw;
-        margin-bottom: -6vh;
+        margin-bottom: -6vw;
     }
     .box1:hover{
-        box-shadow: 0px 3px 40px 0px #7c767a;
-        border: 10px solid transparent;
+        box-shadow: 0vw 3vw 40vw 0vw #7c767a;
+        border: 10vw solid transparent;
     }
     .box2:hover{
-        box-shadow: 0px 3px 40px 0px #7c767a;
-        border: 10px solid transparent
+        box-shadow: 0vw 3vw 40vw 0vw #7c767a;
+        border: 10vw solid transparent
     }
     #service{
         width: 100%;
@@ -1404,7 +1404,7 @@ main>section:nth-child(3)>h1{
     .ser{
         position: absolute;
         color: white;
-        font-size: 6vh;
+        font-size: 11vw;
         left: 5%;
         font-weight: 600;
     }
@@ -1472,7 +1472,7 @@ main>section:nth-child(3)>h1{
     }
     .work{
         font-family: Roboto Flex;
-        font-size: 5.5vh;
+        font-size: 11vw;
         position: absolute;
         color: white;
         font-weight: 600;
@@ -1760,7 +1760,7 @@ main>section:nth-child(3)>h1{
         color: #ffffff;
         left: 37%;
         background-color:transparent;
-        font-size: 2.5vh;
+        font-size: 5vw;
         transition: background 0.5s;
     }    
     .btn:hover{
@@ -1780,7 +1780,7 @@ main>section:nth-child(3)>h1{
     }
     #assignments>h2{
         color: white;
-        font-size: 3.5vh;
+        font-size: 11vw;
         left: 5%;
         position: absolute;
     }
