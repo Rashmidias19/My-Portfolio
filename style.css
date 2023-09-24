@@ -1822,9 +1822,9 @@ main>section:nth-child(3)>h1{
         display: none;
     }
     .slider>a>i{
-        font-size: 5vw;
+        font-size: 4vw;
         position: absolute;
-        left: 88vw;
+        left: 80vw;
         top: 10vh;
     }
     .technology{
