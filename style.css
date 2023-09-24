@@ -62,7 +62,7 @@ header>nav>ul>a>li:hover::after{
     font-weight: normal;
 }
 .title2{
-    color: #940a3f;
+    color: #ce0552;
 }
 body>main{
     position: relative;
@@ -115,10 +115,10 @@ main>section:nth-child(1){
     letter-spacing: 5px;
 }
 .text2{
-    color: #47021c;
+    color: #880034;
 }
 .text3{
-    color:  #47021c;
+    color:  #880034;
     font-size: 3.5vw;
 }
 .text4{
@@ -260,7 +260,7 @@ main>section:nth-child(3){
     height: 200vh;
     position: relative;
     top: 100vh;
-    background-color:#0c0206;
+    /* background-color:#0c0206; */
 }
 #aboutMe>img{
     position: relative;
@@ -279,7 +279,7 @@ main>section:nth-child(3){
 }
 .abt{
     position: absolute;
-    color:#640323;
+    color:#880034;
     top: 10vh;
     left: 42vw;
     font-size: 2.9vw;
@@ -309,7 +309,7 @@ main>section:nth-child(3)>ul>li{
     font-weight:500;
 }
 main>section:nth-child(3)>ul>li>span{
-    color: #610329;
+    color: #750230;
     font-weight: bolder;
 }
 main>section:nth-child(3)>h1{
