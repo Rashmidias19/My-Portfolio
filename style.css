@@ -2491,7 +2491,7 @@ main>section:nth-child(3)>h1{
     
     }
     .contents h3{
-        color: #615f60;
+        /* color: #615f60; */
         font-size: 2.2vh;
         font-family: Roboto Flex;
     }
