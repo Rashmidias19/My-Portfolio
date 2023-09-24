@@ -2305,7 +2305,7 @@ main>section:nth-child(3)>h1{
         text-align: center; */
     }
    
-    /* .title1{
+    .title1{
         width: auto;
         color: #ffffff;
         font-size: 4vw;
@@ -2316,8 +2316,8 @@ main>section:nth-child(3)>h1{
         font-weight: normal;
     }
     .title2{
-        color: #000000;
-    } */
+        color: #c9016f;
+    }
     body>main{
         position: relative;
     }
@@ -2368,13 +2368,13 @@ main>section:nth-child(3)>h1{
         font-family: Roboto Flex;
         letter-spacing: 1.1vw;
     }
-    /* .text2{
-        color: #000000;
+    .text2{
+        color: #bd004f;
     }
     .text3{
-        color:  #000000;
-        font-size: 5.5vw;
-    } */
+        color:  #bd004f;
+        font-size: 7vw;
+    }
     .text4{
         color: #ffffff;
         position: absolute;
