@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
+#title{
+    color: #1b5e20;
+    font-size: 2em;
+}
+#title:hover{
+    color: #00695c;
+}
