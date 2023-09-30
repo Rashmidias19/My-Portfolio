@@ -17,3 +17,9 @@
     border-bottom: rgba(0,0,0,0.7) solid 3px;
     box-shadow: black 0 0 10px;
 }
+.card-header{
+    color: white !important;
+}
+.dash-tile-icon{
+    font-size: 4.5rem;
+}
