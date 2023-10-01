@@ -14,8 +14,8 @@
 </head>
 <body>
     <nav id="navbar-main" class="navbar navbar-expand-md navbar-dark bg-light sticky-top w-100">
-        <img class="float-left" height="75px" src="rsz_logo.png" alt="logo">
-        <a id="title" class="navbar-brand fw-bolder" href="#">Rashmi POS System</a>
+        <img class="float-left rounded-circle" height="75px" src="d (2).png" alt="logo">
+        <a id="title" class="navbar-brand fw-bolder" href="#">&nbsp;&nbsp;Rashmi POS System</a>
         <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,16 +23,16 @@
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mr-auto " style="font-size: 1em;">
                 <li class="nav-item">
-                    <a class="nav-link text-primary" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-dark" href="index.html">Home <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-primary" href="#">Orders</a>
+                    <a class="nav-link text-dark" href="orders.html">Orders</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-primary" href="Item.html">Items</a>
+                    <a class="nav-link text-dark" href="Item.html">Items</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="btn text-primary bg-transparent dropdown-toggle" id="navabar-dropdown" role="button"
+                <li class="nav-item dropdown" style="margin-top: 0.3vh;">
+                    <a class="btn text-dark bg-transparent dropdown-toggle" id="navabar-dropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Others
                     </a>
@@ -75,13 +75,13 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="card">
-                        <div class="card-header bg-success">Item Search</div>
+                        <div class="card-header bg-danger">Item Search</div>
                         <div class="card-body">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Input Item Name/Code Here">
                             </div>
                             <div class="form-group form-inline">
-                                <button class="btn btn-success mb-2 mt-3">Search</button>
+                                <button class="btn btn-secondary mb-2 mt-3">Search</button>
                                 &nbsp;&nbsp;&nbsp;
                                 <select class="form-control mb-2">
                                     <option value="">Name</option>
@@ -91,26 +91,39 @@
                         </div>
                     </div>
                     <div class="form-action-buttons m-3">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-danger">Delete</button>
+                        <!-- <div class="btn-group">
+                            <button type="button" class="btn btn btn-danger">Delete</button>
                             <button type="button" class="btn btn-warning">Edit</button>
                             <button type="button" class="btn btn-info">Details</button>
                             <button type="button" class="btn btn-success">Clear</button>
-                        </div>
+                        </div> -->
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                            <label class="btn btn-outline-secondary" for="btnradio1">Delete</label>
+                          
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="btnradio2">Edit</label>
+                          
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="btnradio3">Details</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="btnradio4">Clear</label>
+                          </div>
                     </div>
                 </div>
                 <div class="col-lg-6 menu-button-group">
                     <div class="center-on-lg">
                         <div class="btn-group float-right mt-lg-0 mb-3">
-                            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#myModal" >New Item</button>
-                            <button type="button" class="btn btn-warning">View All Items</button>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal" >New Item</button>
+                            <button type="button" class="btn btn-dark">View All Items</button>
                         </div>
                     </div>
                 </div>
                 <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                            <div class="modal-header bg-success">
+                            <div class="modal-header bg-danger">
                                 <h4 class="modal-title">New Item</h4>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
@@ -125,8 +138,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" onclick="" class="btn btn-danger">Save</button>
-                                <button type="button" onclick="" class="btn btn-info" data-dismiss="modal">Close</button>
+                                <button type="button" onclick="" class="btn btn-secondary">Save</button>
+                                <button type="button" onclick="" class="btn btn-dark" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -134,7 +147,7 @@
                 <div class="col-md-12 mt-4">
                     <table class="table">
                         <thead>
-                            <tr class="bg-info">
+                            <tr class="bg-secondary">
                                 <th>Item Name</th>
                                 <th>Price</th>
                                 <th>Quantity</th>
@@ -152,6 +165,9 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer-text btn-dark text-center bg-secondary">Developed by Rashmi Dias.@Copyrights</div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/49a731d95a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar-main" class="navbar navbar-expand-md navbar-dark bg-light sticky-top w-100">
+        <img class="float-left rounded-circle" height="75px" src="d (2).png" alt="logo">
+        <a id="title" class="navbar-brand fw-bolder" href="#">&nbsp;&nbsp;Rashmi POS System</a>
+        <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto " style="font-size: 1em;">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="index.html">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="orders.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="Item.html">Items</a>
+                </li>
+                <li class="nav-item dropdown" style="margin-top: 0.3vh;">
+                    <a class="btn text-dark bg-transparent dropdown-toggle" id="navabar-dropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Others
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Customer.html">Customers</a></li>
+                        <li><a class="dropdown-item" href="#">Employees</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="col col-lg-6 col-md-5 col-sm-5"></div>
+            <div>
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                            Sign Up
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="#">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Log Out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="main-title mb-0">
+            <h2><i class="fas fa-shopping-cart"></i> Orders</h2>
+        </div>
+        <div class="front-nav-bar">
+            Home ><b> Orders</b>
+        </div>
+        <div class="jumbotron pt-4 mb-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header bg-danger">Customer Details</div>
+                        <div class="card-body">
+                          <form action="">
+                            <div class="form-group form-inline">
+                                <label for="">Customer :</label>
+                                <select class="form-control col-12 col-xl-auto">
+                                    <option value="">C001</option>
+                                    <option value="">C002</option>
+                                    <option value="">C003</option>
+                                    <option value="">C004</option>
+                                    <option value="">C005</option>
+                                </select>
+                                <button class="btn btn-secondary col-12 col-xl-auto mt-2 mt-xl-2">New Customer</button>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Address :</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Tel :</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Credit Limit :</label>
+                                <input type="text" class="form-control">
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header bg-danger">
+                            Invoice Details
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label>Date :</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Order ID :</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-3">
+                    <div class="card">
+                        <div class="card-header bg-danger">Item Select</div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group form-inline">
+                                    <label>Item :</label>
+                                    <select class="form-control">
+                                        <option>Coca-Cola 1L</option>
+                                        <option>Surf XL 500g</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-inline">
+                                    <label>Price :</label>
+                                    <input type="text" class="form-control col-12 col-xl-4">
+                                    <label class="mt-3 mt-xl-0 ml-0 ml-xl-2">Quantity :</label>
+                                    <input type="text" class="form-control col-12 col-xl-3">
+                                </div>
+                                <hr>
+                                <div class="text-center text-info">Order Item</div>
+                                <hr>
+                                <div class="form-group">
+                                    <label>Order Quantity :</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Credit Limit :</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group text-right">
+                                    <button class="btn btn-danger col-12 col-sm-auto mt-5">Place Order</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4">
+                <table class="table table-bordered">
+                    <thead class="bg-secondary">
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody class="bg-light">
+                        <tr>
+                            <td>Dhal</td>
+                            <td>100.00</td>
+                            <td>100kg</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <section class="content-box-2 p-4 mt-4">
+                    <span id="total-text">Total : 00.0Rs/=</span>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-group form-inline">
+                                <label>Cash</label>
+                                <input type="text" class="form-control col-12 col-lg-auto">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group form-inline">
+                                <label>Balance</label>
+                                <input type="text" class="form-control col-12 col-lg-auto">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group form-inline">
+                                <label>Discount</label>
+                                <input type="text" class="form-control col-12 col-lg-auto">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <div class="menu-button-group float-right" style="margin-top: 10px;">
+                    <div class="center-on-lg">
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                            <label class="btn btn-outline-secondary" for="btnradio1">Clear</label>
+                          
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="btnradio2">Renew Order</label>
+                          
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="btnradio3">Submit Order</label>
+                          </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+               
+    <footer>
+        <div class="footer-text btn-dark text-center bg-secondary">Developed by Rashmi Dias.@Copyrights</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+</html>
