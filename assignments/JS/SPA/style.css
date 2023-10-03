@@ -5,11 +5,11 @@
     font-family: 'Titillium Web', sans-serif;
 }
 #title{
-    color: #e94e82;
+    color: #ffee00;
     font-size: 2em;
 }
 #title:hover{
-    color: #00695c;
+    color: #000000;
 }
 #navbar-main{
     z-index: 1;
@@ -23,7 +23,7 @@
 .dash-tile-icon{
     font-size: 4.5rem;
 }
-#item{
+/* #item{
     display: none;
 }
 #orders{
@@ -31,4 +31,7 @@
 }
 #customer{
     display: none;
+} */
+ul > li {
+    cursor: pointer;
 }
