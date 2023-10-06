@@ -7,7 +7,7 @@
 body{
     background-color: #423b3b;
 }
-main>h2{
+h2{
     position: absolute;
     color: white;
     font-size: 40px;
@@ -15,44 +15,50 @@ main>h2{
     left: 39%;
     margin: auto;
     letter-spacing: 4px;
+    font-weight: bolder;
 }
 #sp{
     position: absolute;
     top: 70px;
     font-size: 20px;
     left: 39%;
+    color:#A93226;
 }
 #speed{
     position: absolute;
     top: 70px;
     font-size: 20px;
     left: 45%;
+    color: blue;
 }
 #wt{
     position: absolute;
     top: 70px;
     font-size: 20px;
     left: 49%;
+    color: #A93226;
 }
 #time{
     position: absolute;
     top: 70px;
     font-size: 20px;
     left: 60.5%;
+    color: blue;
 }
-.box{
+#container{
     display: flex;
-    flex-direction: row;
+    margin: auto;
     position: absolute;
     top: 35%;
+    height: 100px;
     left: 5%;
-    justify-content: space-between;
-    gap: 5px;
+    width: 90%;
 }
-.box>div{
-    /* position: absolute; */
-    width: 190px;
-    height: 70px;
+.id{
+    flex:1;
+    max-width: calc(100%/16*1);
+    height: 100%;
+    border: 1px solid #A93226;
     background-color: white;
 }
 #start{
@@ -69,6 +75,10 @@ main>h2{
 }
 #customRange{
     position: absolute;
-    top: 45%;
-    left: 45%;
+  
 }
+  #meter{
+    position:absolute;
+    top: 56%;
+    left: 50%;
+  }
