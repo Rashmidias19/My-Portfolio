@@ -58,12 +58,17 @@ main>h2{
 #start{
     position: absolute;
     top: 55%;
-    left: 15%;
+    left: 30%;
     width: 100px;
 }
 #stop{
     position: absolute;
     top: 55%;
-    left: 25%;
+    left: 40%;
     width: 100px;
+}
+#customRange{
+    position: absolute;
+    top: 45%;
+    left: 45%;
 }
