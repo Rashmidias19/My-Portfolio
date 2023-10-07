@@ -70,14 +70,14 @@
         start.addEventListener("click", function () {
             clearInterval(interval);
             img.forEach(function (element) {
-                element.src = "assets/walking-man-animated-lzilp2z8jdxc73r0.gif";
+                element.src = "walk.gif";
             })
             setOrder();
         });
 
         stop.addEventListener("click", function () {
             img.forEach(function (element) {
-                element.src = "assets/Screenshot 2023-10-06 211624.png";
+                element.src = "walking-man-animated-lzilp2z8jdxc73r0.gif";
             })
             clearInterval(interval);
         });
