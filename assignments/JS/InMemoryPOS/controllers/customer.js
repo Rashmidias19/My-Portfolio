@@ -30,7 +30,7 @@ function bindTrEvents(){
 }
 
 $("#btnCusDelete").click(function(){
-    let id=$("#customerID").val();
+    let id=$('#customerID').val();
 
     let con=confirm("Do you want to delete this customer ?");
 
@@ -83,7 +83,7 @@ function saveCustomer(){
 }
 
 function getAllCustomers() {
-    // $("#tblCustomer").empty();
+    $("#tblCustomer").empty();
 
     for (let i = 0; i < customerDB.length; i++) {
         let id = customerDB[i].id;
@@ -110,11 +110,12 @@ function getAllCustomers() {
 function deleteCustomer(id) {
     for (let i = 0; i < customerDB.length; i++) {
         if (customerDB[i].id == id) {
-            customerDB.splice(i, 1);
+            customerDB.splice(i,1);
             return true;
         }
-    }
-    return false;
+        return false;
+   
+}
 }
 
 function searchCustomer(id) {

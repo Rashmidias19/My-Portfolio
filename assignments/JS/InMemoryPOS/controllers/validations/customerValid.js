@@ -12,35 +12,24 @@ c_vArray.push({field: $("#custAge"), regEx: CUS_AGE_REGEX});
 c_vArray.push({field: $("#custTp"), regEx: CUS_TP_REGEX});
 c_vArray.push({field: $("#custSalary"), regEx: CUS_SALARY_REGEX});
 
-function clearCustomerInputFields() {
+function clearCustomInputFields() {
     $("#custID,#custName,#custAge,#custTp,#custSalary").val("");
     $("#custID,#custName,#custAge,#custTp,#custSalary").css("border", "1px solid #ced4da");
     $("#custID").focus();
-    setBtn();
 }
 
-setBtn();
-
-//disable tab
 $("#custID,#custName,#custAge,#custTp,#custSalary").on("keydown keyup", function (e) {
-    //get the index number of data input fields indexNo
     let indexNo = c_vArray.indexOf(c_vArray.find((c) => c.field.attr("id") == e.target.id));
 
-    //Disable tab key
     if (e.key == "Tab") {
         e.preventDefault();
     }
 
-    //check validations
     checkValidations(c_vArray[indexNo]);
 
-    setBtn();
-
-    //If the enter key pressed cheque and focus
     if (e.key == "Enter") {
 
         if (e.target.id != c_vArray[c_vArray.length - 1].field.attr("id")) {
-            //check validation is ok
             if (checkValidations(c_vArray[indexNo])) {
                 c_vArray[indexNo + 1].field.focus();
             }
