@@ -40,12 +40,12 @@ function setLastView(){
             setView($("#Orders"));
             break;
         default:
-            setView($("Home"));
+            setView($("#Home"));
     }
 }
 
 function clearAll(){
-    $("#Home","#Customer","#Item","#Orders").css('display','none');
+    $("#Home,#Customer,#Item,#Orders").css("display","none");
 }
 
 function setView(viewOb){
@@ -54,3 +54,20 @@ function setView(viewOb){
     saveView(viewOb.get(0).id);
     console.log(viewOb.get(0).id);
 }
+
+$("#lnkHome").click(function(){
+    setView($("#Home"));
+});
+
+$("#lnkOrders").click(function(){
+    setView($("#Orders"));
+});
+
+$("#lnkItem").click(function(){
+    setView($("#Item"));
+});
+
+$("#lnkCustomer").click(function(){
+    setView($("#Customer"));
+});
+
