@@ -237,95 +237,59 @@
                         <div class="card">
                             <div class="card-header bg-warning">Item Search</div>
                             <div class="card-body">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Input Item Name/Code Here">
-                                </div>
-                                <div class="form-group form-inline">
-                                    <button class="btn btn-outline-dark mb-2 mt-3">Search</button>
-                                    &nbsp;&nbsp;&nbsp;
-                                    <select class="form-control mb-2">
-                                        <option value="">Name</option>
-                                        <option value="">Item Code</option>
-                                    </select>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="itemID">Item ID :</label>
+                                        <input type="text" id="itemID" class="form-control">
+                                        <label for="itemName">Item Name :</label>
+                                        <input type="text" id="itemName" class="form-control">
+                                        <label for="itemQty">Item Quantity :</label>
+                                        <input type="text" id="itemQty" class="form-control">
+                                        <label for="itemPrice">Item Price :</label>
+                                        <input type="text" id="itemPrice" class="form-control">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-action-buttons m-3">
                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                                <input type="radio" class="btn-check" name="btnradio" id="btnItemSave" autocomplete="off"
+                                checked>
+                            <label class="btn btn-outline-secondary" for="btnItemSave">Save</label>
+                                <input type="radio" class="btn-check" name="btnradio" id="btnItemDelete" autocomplete="off"
                                     checked>
-                                <label class="btn btn-outline-secondary" for="btnradio1">Delete</label>
+                                <label class="btn btn-outline-secondary" for="btnItemDelete">Delete</label>
 
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                <label class="btn btn-outline-secondary" for="btnradio2">Edit</label>
+                                <input type="radio" class="btn-check" name="btnradio" id="btnItemEdit" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="btnItemEdit">Edit</label>
 
                                 <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
                                 <label class="btn btn-outline-secondary" for="btnradio3">Details</label>
 
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                                <label class="btn btn-outline-secondary" for="btnradio4">Clear</label>
+                                <input type="radio" class="btn-check" name="btnradio" id="btnItemClear" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="btnItemClear">Clear</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 menu-button-group">
                         <div class="center-on-lg">
                             <div class="btn-group float-right mt-lg-0 mb-3">
-                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                    data-bs-target="#myModal2">New Item</button>
                                 <button type="button" class="btn btn-dark">View All Items</button>
                             </div>
                         </div>
                     </div>
-                    <div class="modal fade" id="myModal2" role="dialog">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header bg-warning">
-                                    <h4 class="modal-title">New Item</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="form-group">
-                                        <label for="name">Item Name :</label>
-                                        <input type="text" id="itemName" class="form-control">
-                                        <label for="price">Item Price :</label>
-                                        <input type="number" id="itemPrice" class="form-control">
-                                        <label for="quantity">Item Quantity :</label>
-                                        <input type="text" id="quantity" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" onclick="" class="btn btn-secondary">Save</button>
-                                    <button type="button" onclick="" class="btn btn-dark"
-                                        data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-md-12 mt-4">
-                        <table class="table">
+                        <table id="tblItem" class="table">
                             <thead>
                                 <tr class="bg-secondary">
+                                    <th>ID</th>
                                     <th>Item Name</th>
                                     <th>Price</th>
                                     <th>Quantity</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Marker</td>
-                                    <td>110.00</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Pen</td>
-                                    <td>20.00</td>
-                                    <td>30</td>
-                                </tr>
-                                <tr>
-                                    <td>Pastel</td>
-                                    <td>310.00</td>
-                                    <td>1</td>
-                                </tr>
+                             
                             </tbody>
                         </table>
                     </div>
@@ -593,6 +557,9 @@
     <script src="controllers/customer.js"></script>
     <script src="models/customer.js"></script>
     <script src="controllers/validations/customerValid.js"></script>
+    <script src="controllers/item.js"></script>
+    <script src="models/item.js"></script>
+    <script src="controllers/validations/itemValid.js"></script>
 </body>
 
 </html>

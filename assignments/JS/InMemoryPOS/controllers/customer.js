@@ -73,12 +73,12 @@ function saveCustomer(){
         newCustomer.salary = customerSalary;
 
         customerDB.push(newCustomer);
-        clearCustomerInputFields();
+        clearCustomInputFields();
         getAllCustomers();
 
     } else {
         alert("Customer already exits.!");
-        clearCustomerInputFields();
+        clearCustomInputFields();
     }
 }
 
