@@ -29,12 +29,12 @@ function bindTrEvents(){
 }
 
 $("#btnItemDelete").click(function(){
-    let id=$('#itemID').val();
+    let ItemId=$('#itemID').val();
 
     let con=confirm("Do you want to delete this Item ?");
 
     if(con){
-        let response=deleteItem(id);
+        let response=deleteItem(ItemId);
         if(response){
             alert("Item Deleted Successfully. ");
             clearItemInputFields();
@@ -118,12 +118,13 @@ function searchItem(id) {
 }
 
 function updateItem(id) {
-    if (searchItem(id) == undefined) {
+    let itemId=$("#itemID").val();
+    if (searchItem(itemId) == undefined) {
         alert("No such item..please check the ID");
     } else {
         let con = confirm("Do you really want to update this item.?");
         if (con) {
-            let item = searchItem(id);
+            let item = searchItem(itemId);
 
             let itemName = $("#itemName").val();
             let itemQty = $("#itemQty").val();
