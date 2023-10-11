@@ -1,6 +1,6 @@
 getAllCustomers();
 
-$("#btnCustomer").click(function(){
+$("#btnCusSave").click(function(){
     if(checkAll()){
         saveCustomer();
     }else{
@@ -20,7 +20,7 @@ function bindTrEvents(){
         let tp=$(this).children().eq(3).text();
         let salary=$(this).children().eq(4).text();
 
-        $("#custID").val(id);
+        $("#customerID").val(id);
         $("#CustName").val(name);
         $("#custAge").val(age);
         $("#custTp").val(tp);
@@ -48,7 +48,7 @@ $("#btnCusDelete").click(function(){
 
 $("#btnCusEdit").click(function(){
     let id=$("#customerID").val();
-    updateCustomer();
+    updateCustomer(id);
     clearCustomInputFields();
 });
 
@@ -57,7 +57,7 @@ $("#btnCusClear").click(function(){
 });
 
 function saveCustomer(){
-    let customerID=$("#custID").val();
+    let customerID=$("#customerID").val();
     if (searchCustomer(customerID.trim()) == undefined) {
         let customerName = $("#custName").val();
         let customerAge = $("#custAge").val();

@@ -130,27 +130,30 @@
                         <div class="card">
                             <div class="card-header bg-warning">Customer Search</div>
                             <div class="card-body">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="customerID" placeholder="Input ID">
-                                </div>
-                                <!-- <div class="form-group form-inline">
-                                    <button class="btn btn-outline-dark mb-2 mt-3">Search</button>
-                                    &nbsp;&nbsp;&nbsp;
-                                    <select class="form-control mb-2">
-                                        <option value="">Name</option>
-                                        <option value="">NIC</option>
-                                        <option value="">Tp</option>
-                                    </select>
-                                </div> -->
+                                    <div class="form-group">
+                                        <label for="customerID">Customer ID :</label>
+                                        <input type="text" id="customerID" class="form-control">
+                                        <label for="name">Customer Name :</label>
+                                        <input type="text" id="custName" class="form-control">
+                                        <label for="age">Age :</label>
+                                        <input type="text" id="custAge" class="form-control">
+                                        <label for="tp">Tp :</label>
+                                        <input type="text" id="custTp" class="form-control">
+                                        <label for="salary">Salary :</label>
+                                        <input type="text" id="custSalary" class="form-control">
+                                    </div>
                             </div>
                         </div>
                         <div class="form-action-buttons m-3">
                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnCusSave" autocomplete="off"
+                                    checked>
+                                <label class="btn btn-outline-secondary"for="btnCusSave">Save</label>
                                 <input type="radio" class="btn-check" name="btnradio" id="btnCusDelete" autocomplete="off"
                                     checked>
                                 <label class="btn btn-outline-secondary"for="btnCusDelete">Delete</label>
 
-                                <input type="radio" class="btn-check" name="btnCusEdit" id="btnradio2" autocomplete="off">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnCusEdit" autocomplete="off">
                                 <label class="btn btn-outline-secondary" id for="btnCusEdit">Edit</label>
 
                                 <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
@@ -164,8 +167,6 @@
                     <div class="col-lg-6 menu-button-group">
                         <div class="canter-on-lg">
                             <div class="btn-group float-right mt-lg-0 mb-3">
-                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                    data-bs-target="#myModal">New Customer</button>
                                 <button type="button" id="btnViewAll" class="btn btn-dark">View All Customers</button>
                             </div>
                         </div>
@@ -178,33 +179,13 @@
                                     <button type="button" class="close" data-dismiss="modal"
                                         data-bs-target="close()">&times;</button>
                                 </div>
-                                <div class="modal-body">
-                                    <div class="form-group">
-                                        <label for="cusID">Customer ID :</label>
-                                        <input type="text" id="custID" class="form-control">
-                                        <label for="name">Customer Name :</label>
-                                        <input type="text" id="custName" class="form-control">
-                                        <label for="age">Age :</label>
-                                        <input type="text" id="custAge" class="form-control">
-                                        <label for="tp">Tp :</label>
-                                        <input type="text" id="custTp" class="form-control">
-                                        <label for="salary">Salary :</label>
-                                        <input type="text" id="custSalary" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" id="btnCustomer" onclick=""
-                                        class="btn btn-secondary">Save</button>
-                                    <button type="button" onclick="" class="btn btn-dark"
-                                        data-dismiss="modal">Close</button>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-12 mt-4 overflow-y: scroll;">
-                        <table id="tblCustomer" class="table">
-                            <thead>
-                                <tr class="bg-secondary">
+                        <table class="table table-bordered table-hover">
+                            <thead class="bg-secondary">
+                                <tr >
                                     <th>ID</th>
                                     <th>Customer Name</th>
                                     <th>Age</th>
@@ -212,9 +193,7 @@
                                     <th>Salary</th>
                                 </tr>
                             </thead>
-                            <tbody>
-
-
+                            <tbody id="tblCustomer" >
                             </tbody>
                         </table>
                     </div>
@@ -279,16 +258,16 @@
                         </div>
                     </div>
                     <div class="col-md-12 mt-4">
-                        <table id="tblItem" class="table">
-                            <thead>
-                                <tr class="bg-secondary">
+                        <table class="table table-bordered table-hover">
+                            <thead class="bg-secondary">
+                                <tr>
                                     <th>ID</th>
                                     <th>Item Name</th>
                                     <th>Price</th>
                                     <th>Quantity</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="tblItem">
                              
                             </tbody>
                         </table>

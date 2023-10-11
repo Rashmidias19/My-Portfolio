@@ -6,19 +6,19 @@ const CUS_SALARY_REGEX = /^[0-9]{2,}([.][0-9]{2})?$/;
 
 //add validations and text fields to the
 let c_vArray = new Array();
-c_vArray.push({field: $("#custID"), regEx: CUS_ID_REGEX});
+c_vArray.push({field: $("#customerID"), regEx: CUS_ID_REGEX});
 c_vArray.push({field: $("#custName"), regEx: CUS_NAME_REGEX});
 c_vArray.push({field: $("#custAge"), regEx: CUS_AGE_REGEX});
 c_vArray.push({field: $("#custTp"), regEx: CUS_TP_REGEX});
 c_vArray.push({field: $("#custSalary"), regEx: CUS_SALARY_REGEX});
 
 function clearCustomInputFields() {
-    $("#custID,#custName,#custAge,#custTp,#custSalary").val("");
-    $("#custID,#custName,#custAge,#custTp,#custSalary").css("border", "1px solid #ced4da");
-    $("#custID").focus();
+    $("#customerID,#custName,#custAge,#custTp,#custSalary").val("");
+    $("#customerID,#custName,#custAge,#custTp,#custSalary").css("border", "1px solid #ced4da");
+    $("#customerID").focus();
 }
 
-$("#custID,#custName,#custAge,#custTp,#custSalary").on("keydown keyup", function (e) {
+$("#customerID,#custName,#custAge,#custTp,#custSalary").on("keydown keyup", function (e) {
     let indexNo = c_vArray.indexOf(c_vArray.find((c) => c.field.attr("id") == e.target.id));
 
     if (e.key == "Tab") {
@@ -80,9 +80,9 @@ function setBtn() {
     $("#btnCusEdit").prop("disabled", true);
 
     if (checkAll()) {
-        $("#btnCustomer").prop("disabled", false);
+        $("#btnCusSave").prop("disabled", false);
     } else {
-        $("#btnCustomer").prop("disabled", true);
+        $("#btnCusSave").prop("disabled", true);
     }
 
     let id = $("#customerID").val();
