@@ -29,12 +29,12 @@ function bindTrEvents(){
 }
 
 $("#btnItemDelete").click(function(){
-    let ItemId=$('#itemID').val();
+    let itemId=$("#itemID").val();
 
-    let con=confirm("Do you want to delete this Item ?");
+    let consent=confirm("Do you want to delete this Item ?");
 
-    if(con){
-        let response=deleteItem(ItemId);
+    if(consent){
+        let response=deleteItem(itemId);
         if(response){
             alert("Item Deleted Successfully. ");
             clearItemInputFields();
@@ -101,13 +101,14 @@ function getAllItems() {
     }
 }
 function deleteItem(id) {
+    
     for (let i = 0; i < itemDB.length; i++) {
         if (itemDB[i].id == id) {
             itemDB.splice(i,1);
             return true;
         }
-        return false;
-   
+            return false;
+       
 }
 }
 
