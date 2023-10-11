@@ -108,8 +108,9 @@ function getAllCustomers() {
 }
 
 function deleteCustomer(id) {
+    let custID=$("#customerID").val();
     for (let i = 0; i < customerDB.length; i++) {
-        if (customerDB[i].id == id) {
+        if (customerDB[i].id == custID) {
             customerDB.splice(i,1);
             return true;
         }

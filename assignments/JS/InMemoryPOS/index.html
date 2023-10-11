@@ -295,16 +295,10 @@
                                 <form>
                                     <div class="form-group form-inline">
                                         <label>Customer :</label>
-                                        <select class="form-control col-12 col-xl-auto">
-                                            <option>C001</option>
-                                            <option>C002</option>
-                                            <option>C003</option>
-                                            <option>C004</option>
-                                            <option>C005</option>
+                                        <select class="form-control col-12 col-xl-auto" id="customerSelect">
+                                            <option>Choose an option</option>
                                         </select>
-                                        <button class="btn btn-secondary col-12 col-xl-auto mt-2 mt-xl-2">New
-                                            Customer</button>
-
+                                        
                                     </div>
                                     <div class="form-group">
                                         <label>Address :</label>
@@ -315,7 +309,7 @@
                                         <input type="text" class="form-control">
                                     </div>
                                     <div class="form-group">
-                                        <label>Credit Limit :</label>
+                                        <label>Salary :</label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </form>
@@ -539,6 +533,7 @@
     <script src="controllers/item.js"></script>
     <script src="models/item.js"></script>
     <script src="controllers/validations/itemValid.js"></script>
+    <script src="controllers/orders.js"></script>
 </body>
 
 </html>
