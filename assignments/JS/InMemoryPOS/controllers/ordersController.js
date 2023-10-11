@@ -6,7 +6,7 @@ function enterCustomerIDS(){
     for(let i=0; i<customerDB.length; i++){
         customerOptions[i]=customerDB[i].id;
     }
-    
+    $("#customerSelect").empty();
 
     for(let i=0;i<customerOptions.length;i++){
         var opt=customerOptions[i];

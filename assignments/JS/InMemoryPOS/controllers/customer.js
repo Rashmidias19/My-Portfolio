@@ -3,6 +3,7 @@ getAllCustomers();
 $("#btnCusSave").click(function(){
     if(checkAll()){
         saveCustomer();
+        
     }else{
         alert("error");
     }
@@ -75,6 +76,7 @@ function saveCustomer(){
         customerDB.push(newCustomer);
         clearCustomInputFields();
         getAllCustomers();
+        enterCustomerIDS();
 
     } else {
         alert("Customer already exits.!");
