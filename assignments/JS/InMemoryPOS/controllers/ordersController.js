@@ -1,62 +1,74 @@
-const customerOptions=[];
-const itemOptions=[];
-let selectCustomer=document.getElementById("customerSelect");
-let selectItem=document.getElementById("itemSelect");
+const customerOptions = [];
+const itemOptions = [];
+let selectCustomer = document.getElementById("customerSelect");
+let selectItem = document.getElementById("itemSelect");
 
 enterCustomerIDS();
 enterItems();
 
 
 
-function enterCustomerIDS(){
+function enterCustomerIDS() {
     $("#customerSelect").empty();
-    for(let i=0; i<customerDB.length; i++){
-        customerOptions[i]=customerDB[i].id;
+    for (let i = 0; i < customerDB.length; i++) {
+        customerOptions[i] = customerDB[i].id;
     }
-  
 
-    for(let i=0;i<customerOptions.length;i++){
-        var opt=customerOptions[i];
-        var el=document.createElement("option");
-        el.text=opt;
-        el.value=opt;
+
+    for (let i = 0; i < customerOptions.length; i++) {
+        var opt = customerOptions[i];
+        var el = document.createElement("option");
+        el.text = opt;
+        el.value = opt;
         selectCustomer.add(el);
     }
+
 }
 
-function enterItems(){
-    for(let i=0; i<itemDB.length; i++){
-        itemOptions[i]=itemDB[i].id;
+function enterItems() {
+    for (let i = 0; i < itemDB.length; i++) {
+        itemOptions[i] = itemDB[i].id;
     }
     $("#itemSelect").empty();
 
-    for(let i=0;i<itemOptions.length;i++){
-        var opt=itemOptions[i];
-        var el=document.createElement("option");
-        el.text=opt;
-        el.value=opt;
+    for (let i = 0; i < itemOptions.length; i++) {
+        var opt = itemOptions[i];
+        var el = document.createElement("option");
+        el.text = opt;
+        el.value = opt;
         selectItem.add(el);
     }
 }
 
-selectCustomer.change(function(){
-    let custID=selectCustomer.val();
+var customDB = [
+    { id: "C00-001", name: "Sachin Thamalsha", age: "21", tp: "0743157372", salary: 100000 },
+    { id: "C00-002", name: "Ranjith Perera", age: "21", tp: "0743157372", salary: 200000 },
+    { id: "C00-003", name: "Kavindu Perera", age: "21", tp: "0743157372", salary: 300000 }
+];
 
-    for(let i=0;i<customerDB.length;i++){
-        if(customerDB[i].id==custID){
-            $("#custTel").val(` ${customerDB[i].tp}`);
-            $("#customerSalary").val(` ${customerDB[i].salary}`);
-        }
-    }
+var itDB = [
+    { id: "I00-001", name: "Lux", qtyOnHand: 100, unitPrice: 145.00 },
+    { id: "I00-002", name: "Sunlight", qtyOnHand: 150, unitPrice: 345.00 },
+    { id: "I00-003", name: "Light Boy", qtyOnHand: 400, unitPrice: 245.00 }
+];
+
+$("#customerSelect").change(function () {
+    $(this).val($(this).val());
+    var customer = searchCustomer($(this).val());
+    $("#custTel").val(customer.tp);
+    $("#customerSalary").val(customer.salary);
+
+    setAndTriggerValue($("#custTel"), customer.tp);
+    setAndTriggerValue($("#customerSalary"), customer.salary);
+    dateCheck();
 });
 
-selectItem.change(function(){
-    let itemID=selectItem.val();
+$("#itemSelect").change(function () {
+    $(this).val($(this).val());
+    var item = searchItem($(this).val());
+    $("#itemPrices").val(item.unitPrice);
 
-    for(let i=0;i<itemDB.length;i++){
-        if(itemDB[i].id==itemID){
-            $("#itemPrices").val(` ${itemDB[i].unitPrice}`);
-        }
-    }
+    setAndTriggerValue($("#itemPrices"), item.unitPrice);
+    dateCheck();
 });
-        
+
