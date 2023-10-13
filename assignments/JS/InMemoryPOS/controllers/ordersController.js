@@ -5,7 +5,7 @@ let selectItem = document.getElementById("itemSelect");
 
 enterCustomerIDS();
 enterItems();
-
+generateOrderId();
 
 
 function enterCustomerIDS() {
@@ -67,9 +67,29 @@ $("#itemSelect").change(function () {
     $(this).val($(this).val());
     var item = searchItem($(this).val());
     $("#itemPrices").val(item.unitPrice);
+    $("#itemsQTY").val(item.qtyOnHand);
 
     setAndTriggerValue($("#itemPrices"), item.unitPrice);
     dateCheck();
 });
 
+function generateOrderId() {
+
+    if (orderDB.length == 0) {
+        $("#order-id").val("OID-0001");
+    } else if (orderDB.length > 0) {
+        var id = orderDB[orderDB.length - 1].oid.split("-")[1];
+        var tempId = parseInt(id);
+        tempId = tempId + 1;
+        if (tempId <= 9) {
+            $("#order-id").val("OID-000" + tempId);
+        } else if (tempId <= 99) {
+            $("#order-id").val("OID-00" + tempId);
+        } else if (tempId <= 999) {
+            $("#order-id").val("OID-0" + tempId);
+        } else if (tempId <= 9999) {
+            $("#order-id").val("OID-" + tempId);
+        }
+    }
+}
 
