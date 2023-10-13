@@ -321,7 +321,7 @@
                                 <form>
                                     <div class="form-group">
                                         <label>Date :</label>
-                                        <input type="date" class="form-control">
+                                        <input type="date" class="form-control" id="order-date">
                                     </div>
                                     <div class="form-group">
                                         <label>Order ID :</label>
@@ -352,14 +352,10 @@
                                     <hr>
                                     <div class="form-group">
                                         <label>Order Quantity :</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Credit Limit :</label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" id="orderQty">
                                     </div>
                                     <div class="form-group text-right">
-                                        <button class="btn btn-secondary mt-3 col-12 col-sm-auto">Place Order</button>
+                                        <button class="btn btn-secondary mt-3 col-12 col-sm-auto" id="order-add-item">Place Order</button>
                                     </div>
                                 </form>
                             </div>
@@ -370,25 +366,27 @@
                     <table id="cusTable" class="table table-bordered">
                         <thead class="bg-secondary">
                             <tr>
-                                <th>Item Name</th>
+                                <th>ItemID</th>
                                 <th>Price</th>
                                 <th>Quantity</th>
                                 <th>Total</th>
                             </tr>
                         </thead>
-                        <tbody class="bg-light">
+                        <tbody class="bg-light" id="order-table">
 
                         </tbody>
                     </table>
                 </div>
                 <section class="content-box-2 p-4 mt-4">
-                    <span id="total-text">Total : 00.0Rs/=</span>
+                    <span id="total">Total : 00.0Rs/=</span>
+                    <br><br>
+                    <span class="text-danger" id="subtotal">SubTotal : 00.0Rs/=</span>
                     <br><br>
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="form-group form-inline">
                                 <label>Cash</label>
-                                <input type="text" class="form-control col-12 col-lg-auto">
+                                <input type="text" class="form-control col-12 col-lg-auto" id="txtCash">
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -400,7 +398,7 @@
                         <div class="col-lg-4">
                             <div class="form-group form-inline">
                                 <label>Discount</label>
-                                <input type="text" class="form-control col-12 col-lg-auto">
+                                <input type="text" class="form-control col-12 col-lg-auto" id="txtDiscount">
                             </div>
                         </div>
                     </div>
