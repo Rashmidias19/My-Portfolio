@@ -136,7 +136,7 @@ $("#order-add-item").click(function () {
     $('#order-table>tr').each(function (e) {
        let check =$(this).children().eq(0).text();
         if (id === check){
-           let liQty = $(this).children().eq(3).text();
+           let liQty = $(this).children().eq(2).text();
            let upQty = parseInt(liQty)+parseInt(qty);
             $(this).children().eq(1).text(price);
             $(this).children().eq(2).text(upQty);
@@ -157,7 +157,7 @@ $("#order-add-item").click(function () {
         $("#order-table").append(row);
     }
     $('#order-table>tr').each(function (e) {
-            let full = $(this).children().eq(4).text();
+            let full = $(this).children().eq(3).text();
             allTotal += parseFloat(full);
     });
     $("#total").text(allTotal);
@@ -182,8 +182,8 @@ $("#subtotal").on("input", function () {
     cashValidate();
 });
 function setBalance() {
-    let subtotalText = $("#subtotal").text();
-    let cashText = $("#txtCash").val();
+    let subtotalText = $("#subtotal").value();
+    let cashText = $("#txtCash").value();
     let subtotal = parseFloat(subtotalText);
     let cash = parseFloat(cashText);
     if (!isNaN(subtotal) && !isNaN(cash)) {
@@ -242,7 +242,7 @@ $("#order-id").on("keydown", function (e) {
                    let cusName ;
                    let address;
                    let salary;
-                   customerDB.find(function (customer) {
+                   customDB.find(function (customer) {
                        if (customer.id == cusId) {
                           cusName=customer.name;
                           address=customer.address;
@@ -250,10 +250,8 @@ $("#order-id").on("keydown", function (e) {
                        }
                    });
 
-                   $("#cId").val(cusId);
-                   $("#cName").val(cusName);
+                   $("#customerSelect").val(cusId);
                    $("#cAddress").val(address);
-                   $("#cSalary").val(salary);
                    $("#order-date").val(date);
 
                    let code;
