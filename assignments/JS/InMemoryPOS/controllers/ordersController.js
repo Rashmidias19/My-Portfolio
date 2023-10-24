@@ -182,15 +182,15 @@ $("#subtotal").on("input", function () {
     cashValidate();
 });
 function setBalance() {
-    let subtotalText = $("#subtotal").value();
-    let cashText = $("#txtCash").value();
+    let subtotalText = $("#subtotal").text();
+    let cashText = $("#txtCash").val();
     let subtotal = parseFloat(subtotalText);
     let cash = parseFloat(cashText);
     if (!isNaN(subtotal) && !isNaN(cash)) {
         let balance = cash - subtotal;
         $("#txtBalance").val(balance.toFixed(2));
     } else {
-        $("#txtBalance").val("0");
+        $("#txtBalance").value("0");
     }
 }
 $("#order-date").on("input", function () {
@@ -239,14 +239,10 @@ $("#order-id").on("keydown", function (e) {
                    let date = order.date;
                    let cusId = order.customerID;
                    let orderDetails = order.orderDetails;
-                   let cusName ;
                    let address;
-                   let salary;
                    customDB.find(function (customer) {
                        if (customer.id == cusId) {
-                          cusName=customer.name;
                           address=customer.address;
-                          salary=customer.salary;
                        }
                    });
 
@@ -257,21 +253,14 @@ $("#order-id").on("keydown", function (e) {
                    let code;
                    let qty;
                    let unitPrice;
-                   let itemName;
                    orderDetails.forEach(function (detail) {
                        console.log(detail.oid, detail.code, detail.qty, detail.unitPrice);
                        code=detail.code;
                        qty=detail.qty;
                        unitPrice=detail.unitPrice;
-                       itemDB.find(function (item) {
-                           if (item.id == code) {
-                               itemName=item.name;
-                           }
-                       });
                        let total = parseFloat(unitPrice) * parseFloat(qty);
                        let row = `<tr>
                      <td>${code}</td>
-                     <td>${itemName}</td>
                      <td>${unitPrice}</td>
                      <td>${qty}</td>
                      <td>${total}</td>
