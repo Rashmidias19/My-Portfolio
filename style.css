@@ -1,22 +1,21 @@
 #loader{
     height: 100vh;
-    width: 100vw;
-    top: 0;
     background-color: black;
-    position: fixed;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    z-index: 8000;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    position: relative;
+    overflow-x: hidden;
+    cursor: pointer;
 }
-/* #header{
+#header{
     display: none;
 }
-main{
+#main{
     display: none;
 }
-footer{
-    display: none;
-} */
 #loader>img{
     width: 200px;
     position: absolute;
@@ -26,6 +25,15 @@ footer{
     right: 0;
     margin: auto;
 }
+/* #loader>img{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+} */
 *{
     scroll-behavior: smooth;
     margin: 0;
@@ -34,6 +42,7 @@ footer{
 body{
     background-color: #0f0107;
     overflow-x: hidden;
+    transition: all 0.5s;
 }
 header{
     width: 100vw;
@@ -6446,6 +6455,7 @@ main>section:nth-child(3)>h1{
     #contact{
         width: 100%;
         height: 100vh;
+        display: none;
         position: relative;
         top: 100vh;
         /* background-color:#383637; */

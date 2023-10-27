@@ -1,76 +1,14 @@
-const customerOptions = [];
-const itemOptions = [];
-let selectCustomer = document.getElementById("customerSelect");
-let selectItem = document.getElementById("itemSelect");
-
-enterCustomerIDS();
-enterItems();
-generateOrderId();
-
-
-function enterCustomerIDS() {
-    $("#customerSelect").empty();
-    for (let i = 0; i < customerDB.length; i++) {
-        customerOptions[i] = customerDB[i].id;
-    }
+$("#Home").css("display","none");
+$("#customer").css("display","none");
+$("#item").css("display","none");
+    generateOrderId();
+   
+    setCusIds();
+    setItemIds()
 
 
-    for (let i = 0; i < customerOptions.length; i++) {
-        var opt = customerOptions[i];
-        var el = document.createElement("option");
-        el.text = opt;
-        el.value = opt;
-        selectCustomer.add(el);
-    }
-
-}
-
-function enterItems() {
-    for (let i = 0; i < itemDB.length; i++) {
-        itemOptions[i] = itemDB[i].id;
-    }
-    $("#itemSelect").empty();
-
-    for (let i = 0; i < itemOptions.length; i++) {
-        var opt = itemOptions[i];
-        var el = document.createElement("option");
-        el.text = opt;
-        el.value = opt;
-        selectItem.add(el);
-    }
-}
-
-var customDB = [
-    { id: "C00-001", name: "Sachin Thamalsha", age: "21", tp: "0743157372", salary: 100000 },
-    { id: "C00-002", name: "Ranjith Perera", age: "21", tp: "0743157372", salary: 200000 },
-    { id: "C00-003", name: "Kavindu Perera", age: "21", tp: "0743157372", salary: 300000 }
-];
-
-var itDB = [
-    { id: "I00-001", name: "Lux", qtyOnHand: 100, unitPrice: 145.00 },
-    { id: "I00-002", name: "Sunlight", qtyOnHand: 150, unitPrice: 345.00 },
-    { id: "I00-003", name: "Light Boy", qtyOnHand: 400, unitPrice: 245.00 }
-];
-
-$("#customerSelect").change(function () {
-    $(this).val($(this).val());
-    var customer = searchCustomer($(this).val());
-    $("#custTel").val(customer.tp);
-    $("#customerSalary").val(customer.salary);
-
-    setAndTriggerValue($("#custTel"), customer.tp);
-    setAndTriggerValue($("#customerSalary"), customer.salary);
-    dateCheck();
-});
-
-$("#itemSelect").change(function () {
-    $(this).val($(this).val());
-    var item = searchItem($(this).val());
-    $("#itemPrices").val(item.unitPrice);
-    $("#itemsQTY").val(item.qtyOnHand);
-
-    setAndTriggerValue($("#itemPrices"), item.unitPrice);
-    dateCheck();
+$("#order-clear").click(function (){
+    clearAll();
 });
 
 function generateOrderId() {
@@ -92,7 +30,48 @@ function generateOrderId() {
         }
     }
 }
+function searchOrder(id) {
+    return orderDB.find(function (order) {
 
+        return order.oid == id;
+    });
+}
+function setCusIds() {
+    $("#customerSelect").empty();
+    customerDB.forEach(function (e) {
+        let id = e.id;
+        let select = `<option selected>${id}</option>`;
+        $("#customerSelect").append(select);
+    });
+}
+$("#customerSelect").change(function () {
+    $(this).val($(this).val());
+    var customer = searchCustomer($(this).val());
+    $("#custTel").val(customer.tp);
+    $("#customerSalary").val(customer.salary);
+
+    setAndTriggerValue($("#custTel"), customer.tp);
+    setAndTriggerValue($("#customerSalary"), customer.salary);
+    dateCheck();
+});
+function setItemIds() {
+    $("#itemSelect").empty();
+    itemDB.forEach(function (e) {
+        let id = e.id;
+        let select = `<option selected>${id}</option>`;
+        $("#itemSelect").append(select);
+    });
+}
+$("#itemSelect").change(function () {
+    $(this).val($(this).val());
+    var item = searchItem($(this).val());
+    $("#itemPrices").val(item.unitPrice);
+    $("#itemsQTY").val(item.qtyOnHand);
+
+    setAndTriggerValue($("#itemPrices"), item.unitPrice);
+    setAndTriggerValue($("#itemsQTY"), item.qtyOnHand);
+    dateCheck();
+});
 function placeOrder() {
     let order = {
         oid: "",
@@ -107,8 +86,8 @@ function placeOrder() {
 
     $('#order-table>tr').each(function () {
         let code = $(this).children().eq(0).text();
-        let price = $(this).children().eq(2).text();
-        let qty = $(this).children().eq(3).text();
+        let qty = $(this).children().eq(2).text();
+        let price = $(this).children().eq(1).text();
         let orderDetails = {
             oid: OId,
             code: code,
@@ -119,6 +98,7 @@ function placeOrder() {
         order.orderDetails.push(orderDetails);
         orderDetailsDB.push(orderDetails);
     });
+
     order.oid = OId;
     order.date = date;
     order.customerID = cusId;
@@ -155,6 +135,8 @@ $("#order-add-item").click(function () {
                     </tr>`;
 
         $("#order-table").append(row);
+       
+
     }
     $('#order-table>tr').each(function (e) {
             let full = $(this).children().eq(3).text();
@@ -188,9 +170,9 @@ function setBalance() {
     let cash = parseFloat(cashText);
     if (!isNaN(subtotal) && !isNaN(cash)) {
         let balance = cash - subtotal;
-        $("#txtBalance").val(balance.toFixed(2));
+        $("#txtBalance").val(balance.toFixed(1));
     } else {
-        $("#txtBalance").value("0");
+        $("#txtBalance").val("0");
     }
 }
 $("#order-date").on("input", function () {
@@ -240,53 +222,43 @@ $("#order-id").on("keydown", function (e) {
                    let cusId = order.customerID;
                    let orderDetails = order.orderDetails;
                    let address;
-                   customDB.find(function (customer) {
+                   let salary;
+                   customerDB.find(function (customer) {
                        if (customer.id == cusId) {
+                          cusName=customer.name;
                           address=customer.address;
+                          salary=customer.salary;
                        }
                    });
 
                    $("#customerSelect").val(cusId);
                    $("#cAddress").val(address);
+                   $("#customerSalary").val(salary);
                    $("#order-date").val(date);
 
                    let code;
                    let qty;
                    let unitPrice;
+                   let itemName;
                    orderDetails.forEach(function (detail) {
                        console.log(detail.oid, detail.code, detail.qty, detail.unitPrice);
                        code=detail.code;
                        qty=detail.qty;
                        unitPrice=detail.unitPrice;
+                       itemDB.find(function (item) {
+                           if (item.id == code) {
+                               itemName=item.name;
+                           }
+                       });
                        let total = parseFloat(unitPrice) * parseFloat(qty);
                        let row = `<tr>
                      <td>${code}</td>
+                     <td>${itemName}</td>
                      <td>${unitPrice}</td>
                      <td>${qty}</td>
                      <td>${total}</td>
                     </tr>`;
-                       $("#order-table").append(row);
-                       $('#order-table').css({
-                           'width ': '101.8%',
-                           'max-height': '80px',
-                           'overflow-y': 'auto',
-                           'display': 'table-caption'
-                       });
-                       $('#order-table>tr>td').css({
-                           'flex': '1',
-                           'max-width': 'calc(100%/5*1)'
-                       });
-                       if ($("#order-table>tr").length > 1) {
-                           $('#order-table>tr').css({
-                               'width': '100%',
-                               'display': 'flex'
-                           });
-                       } else {
-                           $('#order-table>tr').css({
-                               'width': '925px',
-                               'display': 'flex'
-                           });
-                       }
+                      
                    });
                }
                else {
@@ -295,4 +267,3 @@ $("#order-id").on("keydown", function (e) {
            });
     }
 });
-

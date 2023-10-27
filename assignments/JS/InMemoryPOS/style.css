@@ -23,15 +23,15 @@
 .dash-tile-icon{
     font-size: 4.5rem;
 }
-/* #item{
-    display: none;
+#item{
+    position: absolute;
 }
 #orders{
-    display: none;
+    position: absolute;
 }
 #customer{
-    display: none;
-} */
+    position: absolute;
+}
 ul > li {
     cursor: pointer;
 }
