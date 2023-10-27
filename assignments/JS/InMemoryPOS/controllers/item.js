@@ -1,6 +1,6 @@
-$("#Home").css("display","none");
-$("#customer").css("display","none");
-$("#orders").css("display","none");
+// $("#Home").css("display","none");
+// $("#customer").css("display","none");
+// $("#orders").css("display","none");
 getAllItems();
 
 $("#btnItemSave").click(function(){
