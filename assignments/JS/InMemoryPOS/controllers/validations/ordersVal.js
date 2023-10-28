@@ -7,12 +7,12 @@ o_Array.push({field: $("#itemPrices"), regEx: ITEM_PRICE_REGEX });
 o_Array.push({field: $("#itemsQTY"), regEx: ITEM_QTY_REGEX});
 o_Array.push({field: $("#orderQty"), regEx: QTY_REGEX });
 
-// const inputChangeEvent = new Event('input', { bubbles: true });
+const inputChangeEvent = new Event('input', { bubbles: true });
 
-// function setAndTriggerValue($element, value) {
-//     $element.val(value);
-//     $element[0].dispatchEvent(inputChangeEvent);
-// }
+function setAndTriggerValue($element, value) {
+    $element.val(value);
+    $element[0].dispatchEvent(inputChangeEvent);
+}
 
 $("#itemPrices,#itemsQTY,#orderQty").on("keydown keyup input", function (e){
     let indexNo = o_Array.indexOf(o_Array.find((c) => c.field.attr("id") == e.target.id));

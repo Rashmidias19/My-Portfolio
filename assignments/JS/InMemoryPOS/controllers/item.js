@@ -99,7 +99,7 @@ function getAllItems() {
 
         $("#tblItem").append(row);
 
-
+        bindTrEvents();
     }
 }
 function deleteItem(id) {
