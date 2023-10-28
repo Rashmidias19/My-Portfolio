@@ -8,7 +8,7 @@ $("#item").css("display","none");
 
 
 $("#order-clear").click(function (){
-    clearAll();
+    clearAllOrders();
 });
 
 function generateOrderId() {
@@ -196,7 +196,7 @@ $("#btnSubmitOrder").click(function () {
                 if (dateCheck()) {
                     placeOrder();
                     alert("Order Place Successfully");
-                    clearAll();
+                    clearAllOrders();
                     generateOrderId();
                 } else {
                     alert("Insert Date!");
@@ -208,7 +208,7 @@ $("#btnSubmitOrder").click(function () {
             alert("Order Already Registered");
         }
     }else {
-        alert("Pleace Add Items to Place Order");
+        alert("Please Add Items to Place Order");
     }
 });
 $("#order-id").on("keydown", function (e) {

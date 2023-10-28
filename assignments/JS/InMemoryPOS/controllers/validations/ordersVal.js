@@ -130,14 +130,14 @@ $("#orderQty").on("keydown keyup input", function (e){
         $("#QtyError").text("");
     }
 });
-// function clearAll() {
-//     $("#customerSalary,#cAddress,#itemPrices,#itemsQTY,#orderQty,#order-date,#txtCash,#txtDiscount,#txtBalance").val("");
-//     $("#customerSalary,#cAddress#itemPrices,#itemsQTY,#orderQty,#order-date,#txtCash").css("border", "1px solid #ced4da");
-//     $("#total,#subtotal").text("0");
-//     $("#order-add-item").prop("disabled", true);
-//     $("#btnSubmitOrder").prop("disabled", true);
-//     $("#order-table").empty();
-// }
+function clearAllOrders() {
+    $("#customerSalary,#cAddress,#itemPrices,#itemsQTY,#orderQty,#order-date,#txtCash,#txtDiscount,#txtBalance").val("");
+    $("#customerSalary,#cAddress#itemPrices,#itemsQTY,#orderQty,#order-date,#txtCash").css("border", "1px solid #ced4da");
+    $("#total,#subtotal").text("0");
+    $("#order-add-item").prop("disabled", true);
+    $("#btnSubmitOrder").prop("disabled", true);
+    $("#order-table").empty();
+}
 $("#customerSalary,#cAddress,#itemPrices,#itemsQTY,#orderQty,#order-date,#txtCash,#txtDiscount,#txtBalance").on("keydown keyup input", function (e){
     var anyFieldNotEmpty = true;
     $(" #customerSalary, #cAddress, #itemPrices, #itemsQTY, #orderQty, #order-date, #txtCash, #txtDiscount, #txtBalance").each(function() {
